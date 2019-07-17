@@ -1,0 +1,33 @@
+.declaration__title {
+  color: #111111;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-left: 72px;
+}
+
+.declaration__title::before {
+  background-image: url("../../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background: #68b738;
+  background-size: 50px 51px;
+  border-radius: 50%;
+
+}
+
+.declaration__text {
+  font-family: Arial, sans-serif;
+}
+
+.declaration__link {
+  text-transform: uppercase;
+  color: #111111;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.declaration__link::after {
+  right: 20px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24.2 11' style='enable-background:new 0 0 24.2 11;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0 %7b fill: %233F4242;%7d %3c/style%3e%3cpolygon class='st0' points='17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 '/%3e%3c/svg%3e");
+}
