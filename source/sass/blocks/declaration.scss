@@ -9,14 +9,13 @@
 .declaration__title::before {
   background-image: url("../../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
-  background: #68b738;
+  background-color: #68b738;
   background-size: 50px 51px;
   border-radius: 50%;
-
 }
 
 .declaration__text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .declaration__link {

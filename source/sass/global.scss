@@ -1,19 +1,18 @@
 @font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/oswaldregular.woff') format('woff'),
-       url('../fonts/oswaldregular.woff2') format('woff2'),
-       url('../fonts/oswaldmedium.woff') format('woff'),
-       url('../fonts/oswaldmedium.woff2') format('woff2')
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff"),
+    url("../fonts/oswaldmedium.woff") format("woff"),
+    url("../fonts/oswaldmedium.woff2") format("woff2");
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 
 body {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -46,12 +45,11 @@ img {
 
   border: 0;
 
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
 }
 
 .site-button {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
