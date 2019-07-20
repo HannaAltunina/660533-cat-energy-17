@@ -25,11 +25,6 @@ body {
   background-color: #ffffff;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -64,10 +59,4 @@ img {
 .site-button--all-catalog {
   background-color: #f2f2f2;
   color: #444444;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }

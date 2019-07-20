@@ -10,3 +10,7 @@
   vertical-align: middle;
   border-bottom: 1px solid #cdcdcd;
 }
+
+.header__logo-image {
+  @include img;
+}

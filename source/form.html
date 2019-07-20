@@ -46,12 +46,18 @@
         </fieldset>
         <fieldset class="user-form__fieldset user-form__fieldset--program">
           <legend class="visually-hidden">Выбор программы</legend>
+          <p>
             <input class="user-form__input user-form__input--radio" type="radio" name="program-type" id="slim-check" value="slim" checked>
             <label for="slim-check" class="user-form__label">Похудение</label>
+          </p>
+          <p>
             <input class="user-form__input user-form__input--radio" type="radio" name="program-type" id="strong-check" value="strong">
             <label for="strong-check" class="user-form__label">Набор массы</label>
+          </p>
+          <p>
             <input class="user-form__input user-form__input--radio" type="radio" name="program-type" id="advice-check" value="give-me-advice">
             <label for="advice-check" class="user-form__label">Не знаю (Нужен ваш совет)</label>
+          </p>
         </fieldset>
         <fieldset class="user-form__fieldset user-form__fieldset--contacts">
           <legend class="user-form__legend user-form__legend--contacts">Контактные данные<br>(владельца кота)</legend>
@@ -62,9 +68,7 @@
         </fieldset>
         <fieldset class="user-form__fieldset user-form__fieldset--comment">
           <legend class="user-form__legend user-form__legend--comment">Комментарий<br>(владельца кота)</legend>
-            <textarea class="user-form__input user-form__input--comment" cols="30" rows="10" name="comment">
-              Расскажите обо всех повадках кота
-            </textarea>
+            <textarea class="user-form__input user-form__input--comment" cols="30" rows="10" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="user-form__fieldset user-form__fieldset--addition">
           <legend class="user-form__legend user-form__legend--addition">Дополнительно</legend>
@@ -78,7 +82,7 @@
             <label for="vitamins" class="user-form__label">Витамины</label>
         </fieldset>
         <button class="user-form__button site-button" type="submit">Отправить заявку</button>
-        <p><sup>*</sup> — Обязательные поля</p>
+        <p class="user-form__comment"><sup>*</sup> — Обязательные поля</p>
       </form>
     </main>
     <footer class="footer">

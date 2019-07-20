@@ -1,3 +1,7 @@
+.main-nav__list {
+  @include list-style;
+}
+
 .main-nav__item {
   border-bottom: 1px solid #cdcdcd;
   padding-top: 23px;

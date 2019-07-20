@@ -1,3 +1,7 @@
+.catalog-navigation__list {
+  @include list-style;
+}
+
 .catalog-navigation__item {
   background-color: #f2f2f2;
   margin-left: 20px;
