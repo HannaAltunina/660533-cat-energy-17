@@ -13,3 +13,7 @@
   margin-top: 19px;
   margin-bottom: 29px;
 }
+
+.intro__image {
+  @include img;
+}

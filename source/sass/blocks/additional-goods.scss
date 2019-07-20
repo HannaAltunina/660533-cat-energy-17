@@ -1,3 +1,7 @@
+.additional-goods__list {
+  @include list-style;
+}
+
 .additional-goods__item {
   padding: 14px 20px 17px 20px;
 }

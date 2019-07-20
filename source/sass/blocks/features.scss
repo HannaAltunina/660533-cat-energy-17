@@ -3,6 +3,10 @@
   margin-right: 20px;
 }
 
+.features__list {
+  @include list-style;
+}
+
 .features__item {
   margin-left: 80px;
   font-family: "Arial", sans-serif;
