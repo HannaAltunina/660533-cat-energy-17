@@ -5,14 +5,27 @@
 
 .features__list {
   @include list-style;
+  display: flex;
+  flex-direction: column;
 }
 
 .features__item {
-  margin-left: 80px;
-  font-family: "Arial", sans-serif;
+  padding-left: 100px;
+  width: 150px;
+  font-family: $arial-font;
   margin-bottom: 32px;
 }
 
 .main__title--features {
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    flex-direction: row;
+  }
+
+  .features__item {
+    width: 130px;
+  }
 }

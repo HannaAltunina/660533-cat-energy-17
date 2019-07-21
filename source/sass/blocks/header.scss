@@ -1,4 +1,6 @@
 .header {
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -13,4 +15,28 @@
 
 .header__logo-image {
   @include img;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    height: 59px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    position: absolute;
+    background: transparent;
+    z-index: 1;
+  }
+
+  .header__logo {
+    height: 60px;
+  }
 }

@@ -24,7 +24,7 @@
   padding: 0;
   margin: 0;
   vertical-align: middle;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-font;
   color: #444444;
   text-transform: uppercase;
   font-size: 16px;
@@ -32,7 +32,7 @@
 }
 
 .user-form__comment {
-  font-family: "Arial", sans-serif;
+  font-family: $arial-font;
   color: #444444;
   font-size: 14px;
   line-height: 16px;

@@ -17,7 +17,6 @@ body {
   font-weight: normal;
   line-height: 18px;
 
-  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -44,7 +43,7 @@ body {
 }
 
 .site-button {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-font;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;

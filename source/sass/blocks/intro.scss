@@ -1,7 +1,7 @@
 .intro {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../../img/index-background-mobile@1x.jpg"),
+    linear-gradient(to bottom, #68b738 305px, #ffffff 305px);
   background-repeat: no-repeat;
-  background-size: 320px 305px;
   background-position: top center;
   color: #ffffff;
   text-align: center;
@@ -16,4 +16,47 @@
 
 .intro__image {
   @include img;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background: #ffffff;
+    text-align: left;
+  }
+
+  .main__title--intro {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .intro__image {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .intro__button {
+    position: relative;
+    z-index: 1;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    margin-top: -60px;
+    background-image: url("../../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, #ffffff 720px, #68b738 720px);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 }
