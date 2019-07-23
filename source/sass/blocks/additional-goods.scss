@@ -1,12 +1,36 @@
 .additional-goods__list {
   @include list-style;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
 }
 
 .additional-goods__item {
-  padding: 14px 20px 17px 20px;
+  width: 100%;
 }
 
 .additional-goods__title {
   font-size: 24px;
   line-height: 24px;
+}
+
+.additional-goods__wrapper {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods__item {
+    padding: 28px 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods__wrapper {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .additional-goods__list {
+    width: 70%;
+  }
 }

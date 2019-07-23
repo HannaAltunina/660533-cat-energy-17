@@ -1,3 +1,9 @@
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .copyright__name {
   font-family: $arial-font;
   font-size: 16px;

@@ -1,8 +1,29 @@
 .catalog__list {
   @include list-style;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 280px;
 }
 
 .catalog__item {
   border-bottom: 1px solid #ededed;
-  padding: 25px 20px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 45%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 20%;
+    min-width: 245px;
+  }
 }

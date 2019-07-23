@@ -1,5 +1,5 @@
 .main-nav {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -25,6 +25,7 @@
   .main-nav {
     width: auto;
     margin: 0;
+    margin-right: 30px;
   }
 
   .main-nav__list {
@@ -45,10 +46,14 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    width: 720px;
+    width: 510px;
   }
 
-  .main-nav__link {
+  .main-nav__link--index {
     color: #ffffff;
+  }
+
+  .main-nav__link--catalog {
+    color: #000000;
   }
 }

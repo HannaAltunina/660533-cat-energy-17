@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Oswald", "Arial", sans-serif;
@@ -49,7 +54,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
-  width: 280px;
+  width: 100%;
   border: none;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -58,4 +63,10 @@ body {
 .site-button--all-catalog {
   background-color: #f2f2f2;
   color: #444444;
+}
+
+@media (min-width: $desktop-width) {
+  .site-button--additional {
+    width: 245px;
+  }
 }

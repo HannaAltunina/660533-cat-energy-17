@@ -1,17 +1,12 @@
-.features {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .features__list {
   @include list-style;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 280px;
 }
 
 .features__item {
-  padding-left: 100px;
-  width: 150px;
+  width: 100%;
   font-family: $arial-font;
   margin-bottom: 32px;
 }
@@ -21,11 +16,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features__list {
-    flex-direction: row;
-  }
-
   .features__item {
-    width: 130px;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__item {
+    width: 25%;
   }
 }

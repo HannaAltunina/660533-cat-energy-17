@@ -1,11 +1,21 @@
 .user-form__fieldset {
   border: none;
+  border-bottom: 1px solid #ededed;
 }
 
 .user-form__legend {
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+}
+
+.user-form__wrapper {
+  display: flex;
+}
+
+.user-form__header {
+  display: flex;
+  flex-direction: column;
 }
 
 .user-form__label {
@@ -18,6 +28,7 @@
 
 .user-form__input {
   padding: 15px;
+  flex-grow: 1;
 }
 
 .user-form__input::placeholder {
@@ -37,4 +48,60 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+.user-form__list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form__fieldset--contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .user-form__fieldset {
+    border-bottom: none;
+  }
+
+  .user-form__fieldset--program {
+    border: 1px solid #cdcdcd;
+  }
+
+  .user-form__list--addition {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-form__item--addition {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-form__header {
+    flex-direction: row;
+  }
+
+  .user-form__fieldset--user-info {
+    width: 50%;
+  }
+
+  .user-form__fieldset--program {
+    width: 50%;
+  }
+
+  .user-form__item--addition {
+    width: 25%;
+  }
+
+  .user-form__fieldset--contacts {
+    flex-direction: row;
+  }
+
+  .user-form__wrapper--contacts {
+    width: 50%;
+  }
 }

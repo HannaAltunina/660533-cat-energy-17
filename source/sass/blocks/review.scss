@@ -1,6 +1,22 @@
 .review {
   background-color: #f2f2f2;
-  padding: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    margin-left: -110px;
+    margin-right: -110px;
+    flex-direction: row;
+  }
 }
 
 .main__title--review {
@@ -11,7 +27,8 @@
   font-family: $arial-font;
 }
 
-.review__cost {
-  text-transform: uppercase;
-  text-align: center;
+.review__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
