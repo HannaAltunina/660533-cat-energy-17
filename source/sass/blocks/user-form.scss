@@ -13,6 +13,10 @@
   display: flex;
 }
 
+.user-form__wrapper--button {
+  flex-direction: column;
+}
+
 .user-form__header {
   display: flex;
   flex-direction: column;
@@ -27,8 +31,23 @@
 }
 
 .user-form__input {
-  padding: 15px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  font-family: $oswald-font;
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   flex-grow: 1;
+}
+
+.user-form__input--comment {
+  width: 100%;
 }
 
 .user-form__input::placeholder {
@@ -48,6 +67,7 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  flex-grow: 1;
 }
 
 .user-form__list {
@@ -78,6 +98,15 @@
   .user-form__item--addition {
     width: 50%;
   }
+
+  .user-form__input {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -103,5 +132,9 @@
 
   .user-form__wrapper--contacts {
     width: 50%;
+  }
+
+  .user-form__wrapper--button {
+    flex-direction: row;
   }
 }

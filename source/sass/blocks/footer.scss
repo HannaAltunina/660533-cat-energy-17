@@ -53,4 +53,15 @@
   .footer__wrapper {
     padding: 60px 110px;
   }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer__intro {
+    position: absolute;
+    background-color: #ffffff;
+    top: 95px;
+    left: 110px;
+  }
 }

@@ -8,12 +8,6 @@
   flex-direction: column;
 }
 
-@media (min-width: $tablet-width) {
-  .stats-list__wrapper {
-    width: 33.33%;
-  }
-}
-
 .stats-list__definition {
   position: relative;
   width: 124px;
@@ -41,10 +35,15 @@
   width: 100%;
   text-transform: uppercase;
   text-align: center;
+  color: #111111;
 }
 
 @media (min-width: $tablet-width) {
   .stats-list__cost {
+    width: 33.33%;
+  }
+
+  .stats-list__wrapper {
     width: 33.33%;
   }
 }

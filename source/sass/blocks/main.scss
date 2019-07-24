@@ -3,6 +3,30 @@
   padding-right: 20px;
 }
 
+.main__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.main__title--features,
+.main__title--review,
+.main__title--form {
+  color: #111111;
+  line-height: 60px;
+}
+
+.main--form {
+  padding: 30px 20px;
+}
+
+.main__description {
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .main__wrapper {
     padding-left: 30px;
@@ -20,18 +44,8 @@
     padding-left: 110px;
     padding-right: 110px;
   }
-}
 
-.main__title {
-  font-size: 36px;
-  line-height: 36px;
-  text-align: left;
-}
-
-.main--form {
-  padding: 30px 20px;
-}
-
-.main__description {
-  text-transform: uppercase;
+  .main__title--form {
+    font-size: 60px;
+  }
 }
