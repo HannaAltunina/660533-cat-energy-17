@@ -1,3 +1,12 @@
+.stats-list {
+  display: flex;
+}
+
+.stats-list__wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
 
 .stats-list__definition {
   position: relative;
@@ -18,6 +27,23 @@
   font-size: 12px;
   line-height: 12px;
   position: absolute;
-  font-family: "Arial", sans-serif;
+  font-family: $arial-font;
   background: #f2f2f2;
+}
+
+.stats-list__cost {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .stats-list__cost {
+    width: 33.33%;
+  }
+
+  .stats-list__wrapper {
+    width: 33.33%;
+  }
 }

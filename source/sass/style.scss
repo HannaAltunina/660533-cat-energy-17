@@ -1,6 +1,8 @@
-@import "global.scss",
-  "blocks/mixins.scss",
+@import "variables.scss",
+  "mixins.scss",
+  "global.scss",
   "blocks/header.scss",
+  "blocks/site-button.scss",
   "blocks/main-nav.scss",
   "blocks/main.scss",
   "blocks/intro.scss",
@@ -17,4 +19,5 @@
   "blocks/catalog.scss",
   "blocks/product.scss",
   "blocks/additional-goods.scss",
+  "blocks/teaser.scss",
   "blocks/user-form.scss";

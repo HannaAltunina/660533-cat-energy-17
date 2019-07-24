@@ -1,3 +1,9 @@
+.footer__intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
 .footer__promo {
   text-transform: uppercase;
   font-size: 16px;
@@ -8,7 +14,7 @@
 }
 
 .footer__address {
-  font-family: "Arial", sans-serif;
+  font-family: $arial-font;
   line-height: 20px;
   font-style: normal;
 }
@@ -16,7 +22,6 @@
 .footer__logo {
   margin-top: 39px;
   margin-bottom: 31px;
-  margin-left: 90px;
   text-align: center;
 }
 
@@ -27,4 +32,36 @@
 .footer__wrapper {
   background-color: #f2f2f2;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__map {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding: 60px 110px;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer__intro {
+    position: absolute;
+    background-color: #ffffff;
+    top: 95px;
+    left: 110px;
+  }
 }

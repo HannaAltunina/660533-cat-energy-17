@@ -1,11 +1,25 @@
 .user-form__fieldset {
   border: none;
+  border-bottom: 1px solid #ededed;
 }
 
 .user-form__legend {
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+}
+
+.user-form__wrapper {
+  display: flex;
+}
+
+.user-form__wrapper--button {
+  flex-direction: column;
+}
+
+.user-form__header {
+  display: flex;
+  flex-direction: column;
 }
 
 .user-form__label {
@@ -17,14 +31,30 @@
 }
 
 .user-form__input {
-  padding: 15px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  font-family: $oswald-font;
+  color: #444444;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  flex-grow: 1;
+}
+
+.user-form__input--comment {
+  width: 100%;
 }
 
 .user-form__input::placeholder {
   padding: 0;
   margin: 0;
   vertical-align: middle;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-font;
   color: #444444;
   text-transform: uppercase;
   font-size: 16px;
@@ -32,9 +62,79 @@
 }
 
 .user-form__comment {
-  font-family: "Arial", sans-serif;
+  font-family: $arial-font;
   color: #444444;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  flex-grow: 1;
+}
+
+.user-form__list {
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form__fieldset--contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .user-form__fieldset {
+    border-bottom: none;
+  }
+
+  .user-form__fieldset--program {
+    border: 1px solid #cdcdcd;
+  }
+
+  .user-form__list--addition {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-form__item--addition {
+    width: 50%;
+  }
+
+  .user-form__input {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-form__header {
+    flex-direction: row;
+  }
+
+  .user-form__fieldset--user-info {
+    width: 50%;
+  }
+
+  .user-form__fieldset--program {
+    width: 50%;
+  }
+
+  .user-form__item--addition {
+    width: 25%;
+  }
+
+  .user-form__fieldset--contacts {
+    flex-direction: row;
+  }
+
+  .user-form__wrapper--contacts {
+    width: 50%;
+  }
+
+  .user-form__wrapper--button {
+    flex-direction: row;
+  }
 }

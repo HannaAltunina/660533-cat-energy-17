@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Oswald", "Arial", sans-serif;
@@ -17,7 +22,6 @@ body {
   font-weight: normal;
   line-height: 18px;
 
-  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -41,22 +45,4 @@ body {
   border: 0;
 
   clip-path: inset(100%);
-}
-
-.site-button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  background-color: #68b738;
-  width: 280px;
-  border: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.site-button--all-catalog {
-  background-color: #f2f2f2;
-  color: #444444;
 }

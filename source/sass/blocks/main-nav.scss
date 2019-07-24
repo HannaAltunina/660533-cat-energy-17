@@ -1,5 +1,13 @@
+.main-nav {
+  min-width: 320px;
+  margin: 0 auto;
+  margin-left: -20px;
+}
+
 .main-nav__list {
   @include list-style;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__item {
@@ -12,4 +20,41 @@
 .main-nav__link {
   text-decoration: none;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  .main-nav__list {
+    width: 530px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 510px;
+  }
+
+  .main-nav__link--index {
+    color: #ffffff;
+  }
+
+  .main-nav__link--catalog {
+    color: #000000;
+  }
 }
