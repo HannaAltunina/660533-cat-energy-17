@@ -2,3 +2,15 @@
 .cutomer-photo__after {
   @include img;
 }
+
+@media (min-width: $tablet-width) {
+  .cutomer-photo__before {
+    height: 499px;
+    width: auto;
+  }
+
+  .cutomer-photo__after {
+    height: 517px;
+    width: auto;
+  }
+}

@@ -29,15 +29,38 @@
 
 @media (min-width: $tablet-width) {
   .review {
+    background-color: #f2f2f2;
+  }
+
+  .review__wrapper {
+    background-color: #ffffff;
     margin-left: -30px;
     margin-right: -30px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 160px;
+    border-top: 1px solid rgb(217, 217, 217);
+  }
+
+  .review__text {
+    margin-bottom: 50px;
+  }
+
+  .review__stats {
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+  }
+
+
+  .review__photo {
+    background-color: transparent;
+    margin-top: -170px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review {
+    background-color: #f2f2f2;
     margin-left: -110px;
     margin-right: -110px;
     flex-direction: row;
@@ -45,7 +68,25 @@
     padding-right: 110px;
   }
 
+  .main__title--review {
+    margin-top: 50px;
+  }
+
+  .review__wrapper {
+    margin-top: -150px;
+    background-color: transparent;
+    border-top: none;
+    align-content: flex-start;
+  }
+
+  .review__text {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    width: 430px;
+  }
+
   .review__stats {
     flex-direction: column;
+    justify-content: flex-start;
   }
 }

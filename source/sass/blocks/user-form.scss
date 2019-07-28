@@ -17,6 +17,10 @@
   flex-direction: column;
 }
 
+.user-form__wrapper--contact-list {
+  flex-direction: column;
+}
+
 .user-form__header {
   display: flex;
   flex-direction: column;
@@ -126,9 +130,10 @@
     width: 25%;
   }
 
-  .user-form__fieldset--contacts {
+  .user-form__wrapper--contact-list {
     flex-direction: row;
   }
+
 
   .user-form__wrapper--contacts {
     width: 50%;

@@ -29,8 +29,10 @@
 
 @media (min-width: $tablet-width) {
   .main__wrapper {
+    width: 768px;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 0 auto;
   }
 
   .main__wrapper--form {
@@ -41,6 +43,7 @@
 
 @media (min-width: $desktop-width) {
   .main__wrapper {
+    width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
   }

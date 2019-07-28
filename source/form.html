@@ -12,7 +12,7 @@
         <a class="header__logo">
           <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--opened main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -69,6 +69,7 @@
           </div>
           <fieldset class="user-form__fieldset user-form__fieldset--contacts">
             <legend class="user-form__legend user-form__legend--contacts">Контактные данные<br>(владельца кота)</legend>
+            <div class="user-form__wrapper user-form__wrapper--contact-list">
               <p class="user-form__wrapper user-form__wrapper--contacts">
                 <label for="email-input" class="user-form__label">E-mail:<sup>*</sup></label>
                 <input class="user-form__input user-form__input--email" type="email" name="email" id="email-input" placeholder="kuklachev@gmail.com">
@@ -77,6 +78,7 @@
                 <label for="tel-input" class="user-form__label">Телефон:<sup>*</sup></label>
                 <input class="user-form__input user-form__input--tel" type="tel" name="tel" id="tel-input" placeholder="8 (960) 900-60-90">
               </p>
+            </div>
           </fieldset>
           <fieldset class="user-form__fieldset user-form__fieldset--comment">
             <legend class="user-form__legend user-form__legend--comment">Комментарий</legend>

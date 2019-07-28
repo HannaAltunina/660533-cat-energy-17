@@ -6,12 +6,13 @@
   color: #ffffff;
   text-align: center;
   padding-top: 29px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .main__title--intro {
   text-align: center;
 }
-
 
 .intro__slogan {
   text-transform: uppercase;
@@ -21,12 +22,18 @@
 
 .intro__image {
   @include img;
+  height: 270px;
+}
+
+.intro__button {
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    background: #ffffff;
+    background: transparent;
     text-align: left;
+    padding-left: 90px;
   }
 
   .main__title--intro {
@@ -43,20 +50,41 @@
     text-align: left;
   }
 
+  .intro__image {
+    position: absolute;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+    top: 360px;
+    left: 50px;
+  }
+
   .intro__button {
-    z-index: 1;
-    margin-left: 30px;
-    margin-right: auto;
+    width: 245px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-top: -66px;
+    margin-top: -110px;
     margin-right: -110px;
+    padding-top: 196px;
     background-image: url("../../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, #ffffff 720px, #68b738 720px);
     background-repeat: no-repeat;
     background-position: top right;
+  }
+
+  .intro__image {
+    width: 552px;
+    height: 499px;
+    z-index: 1;
+    top: 150px;
+    left: 590px;
+  }
+
+  .intro__button {
+    margin-top: 30px;
+    margin-bottom: 155px;
   }
 }
