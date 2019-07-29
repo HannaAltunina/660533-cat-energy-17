@@ -14,6 +14,7 @@
 .main__title--form {
   color: #111111;
   line-height: 60px;
+  font-size: 36px;
 }
 
 .main--form {
@@ -33,6 +34,12 @@
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+  }
+
+  .main__title--features,
+  .main__title--review,
+  .main__title--form {
+    font-size: 60px;
   }
 
   .main__wrapper--form {
