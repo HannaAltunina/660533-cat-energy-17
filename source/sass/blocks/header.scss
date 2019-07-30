@@ -3,6 +3,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .header__logo {
@@ -10,10 +11,28 @@
   vertical-align: middle;
   width: 100%;
   padding-top: 11px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__logo-image {
   @include img;
+}
+
+.header__logo--index {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .header__wrapper {
@@ -30,6 +49,7 @@
     line-height: 25px;
     text-transform: uppercase;
     color: #111111;
+    border-bottom: none;
   }
 
   .header__wrapper {

@@ -11,10 +11,16 @@
 
 .main__title--features,
 .main__title--review,
-.main__title--form {
+.main__title--form,
+.main__title--catalog {
   color: #111111;
   line-height: 60px;
   font-size: 36px;
+}
+
+.main__title--catalog {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .main--form {
@@ -38,7 +44,8 @@
 
   .main__title--features,
   .main__title--review,
-  .main__title--form {
+  .main__title--form,
+  .main__title--catalog {
     font-size: 60px;
   }
 

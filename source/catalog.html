@@ -9,11 +9,11 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo">
+        <a class="header__logo"  href="index.html">
           <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
         </a>
-        <button class="main-nav__toggle main-nav__toggle--opened main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -29,8 +29,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="main__wrapper">
-      <h1 class="main__title">Каталог продукции</h1>
+      <h1 class="main__title main__title--catalog">Каталог продукции</h1>
       <section class="main__catalog catalog">
       <ul class="catalog__list">
         <li class="catalog__item product">
@@ -209,7 +208,6 @@
       </div>
       </div>
     </section>
-    </div>
     </main>
     <footer class="footer">
       <div class="footer__intro">
@@ -249,5 +247,25 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle--closed');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navToggle.classList.contains('main-nav__toggle--closed')) {
+          navMain.classList.add('main-nav');
+          navMain.classList.remove('main-nav--closed');
+          navToggle.classList.remove('main-nav__toggle--closed');
+          navToggle.classList.add('main-nav__toggle--opened');
+        } else {
+          navMain.classList.remove('main-nav');
+          navMain.classList.add('main-nav--closed');
+          navToggle.classList.remove('main-nav__toggle--opened');
+          navToggle.classList.add('main-nav__toggle--closed');
+          }
+      });
+    </script>
   </body>
 </html>
