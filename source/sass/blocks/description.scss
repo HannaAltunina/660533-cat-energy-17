@@ -1,0 +1,20 @@
+.description {
+  width: 140px;
+}
+
+.description__wrapper {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.description__field {
+  width: 50%;
+  display: inline-block;
+}
+
+.description__value {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}

@@ -23,6 +23,11 @@
   display: flex;
 }
 
+.catalog__item--all-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__list {
     justify-content: space-between;
@@ -30,6 +35,11 @@
 
   .catalog__item {
     width: 45%;
+    border-bottom: none;
+  }
+
+  .catalog__item:first-child {
+    border-top: none;
   }
 
   .catalog__item--wrapper {

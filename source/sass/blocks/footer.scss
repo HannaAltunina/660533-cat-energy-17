@@ -67,6 +67,7 @@
   }
 
   .footer__intro {
+    width: 768px;
     padding-left: 71px;
     padding-right: 72px;
     padding-top: 66px;
@@ -99,6 +100,7 @@
 @media (min-width: $desktop-width) {
   .footer {
     position: relative;
+    background-color: #f2f2f2;
   }
 
   .footer__intro {
@@ -112,6 +114,9 @@
   }
 
   .footer__wrapper {
-    padding: 60px 110px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
