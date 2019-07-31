@@ -9,11 +9,11 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo">
+        <a class="header__logo"  href="index.html">
           <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -29,8 +29,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="main__wrapper">
-      <h1 class="main__title">Каталог продукции</h1>
+      <h1 class="main__title main__title--catalog">Каталог продукции</h1>
       <section class="main__catalog catalog">
       <ul class="catalog__list">
         <li class="catalog__item product">
@@ -39,12 +38,18 @@
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
               <dl class="product__description description">
-                <dt class="description__field">Объём</dt>
-                <dd class="description__value">500 г</dd>
-                <dt class="description__field">Вкус</dt>
-                <dd class="description__value">Курица</dd>
-                <dt class="description__field">Цена</dt>
-                <dd class="description__value">700 Р.</dd>
+                <div class="description__wrapper">
+                  <dt class="description__field">Объём</dt>
+                  <dd class="description__value">500 г</dd>
+                </div>
+                <div class="description__wrapper">
+                  <dt class="description__field">Вкус</dt>
+                  <dd class="description__value">Курица</dd>
+                </div>
+                <div class="description__wrapper">
+                  <dt class="description__field">Цена</dt>
+                  <dd class="description__value">700 Р.</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -56,12 +61,18 @@
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
               <dl class="product__description description">
+                  <div class="description__wrapper">
                 <dt class="description__field">Объём</dt>
                 <dd class="description__value">1000 г</dd>
-                <dt class="description__field">Вкус</dt>
+                </div>
+                <div class="description__wrapper">
+                    <dt class="description__field">Вкус</dt>
                 <dd class="description__value">Курица</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Цена</dt>
                 <dd class="description__value">1000 Р.</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -73,12 +84,19 @@
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
               <dl class="product__description description">
+                  <div class="description__wrapper">
                 <dt class="description__field">Объём</dt>
                 <dd class="description__value">500 г</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Вкус</dt>
                 <dd class="description__value">Рыба</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Цена</dt>
                 <dd class="description__value">700 Р.</dd>
+                </div>
+
               </dl>
             </div>
           </div>
@@ -90,12 +108,18 @@
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
               <dl class="product__description description">
+                  <div class="description__wrapper">
                 <dt class="description__field">Объём</dt>
                 <dd class="description__value">1000 г</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Вкус</dt>
                 <dd class="description__value">Рыба</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Цена</dt>
                 <dd class="description__value">1000 Р.</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -107,12 +131,18 @@
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy Slim 500 г</h3>
               <dl class="product__description description">
+                  <div class="description__wrapper">
                 <dt class="description__field">Объём</dt>
                 <dd class="description__value">500 г</dd>
+                  </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Вкус</dt>
                 <dd class="description__value">Гречка</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Цена</dt>
                 <dd class="description__value">400 Р.</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -124,12 +154,18 @@
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy Slim 1000 г</h3>
               <dl class="product__description description">
+                  <div class="description__wrapper">
                 <dt class="description__field">Объём</dt>
                 <dd class="description__value">1000 г</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Вкус</dt>
                 <dd class="description__value">Гречка</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Цена</dt>
                 <dd class="description__value">700 Р.</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -141,21 +177,29 @@
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy Slim 500 г</h3>
               <dl class="product__description description">
+                  <div class="description__wrapper">
                 <dt class="description__field">Объём</dt>
                 <dd class="description__value">500 г</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Вкус</dt>
                 <dd class="description__value">Рис</dd>
+                </div>
+                <div class="description__wrapper">
                 <dt class="description__field">Цена</dt>
                 <dd class="description__value">500 Р.</dd>
+                </div>
               </dl>
             </div>
           </div>
           <button class="product__order site-button" type="button">Заказать</button>
         </li>
-        <li class="catalog__item catalog__item--all-catalog">
-          <h3 class="product__title">Показать еще 100500 товаров</h3>
+        <li class="catalog__item">
+            <div class="catalog__item--wrapper catalog__item--all-wrapper">
+            <h3 class="product__title product__title--all-catalog">Показать еще 100500 товаров</h3>
           <p class="product__description">На самом деле вкусов гораздо больше!</p>
           <button class="product__order site-button site-button--all-catalog" type="button">Показать все</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -209,7 +253,6 @@
       </div>
       </div>
     </section>
-    </div>
     </main>
     <footer class="footer">
       <div class="footer__intro">
@@ -249,5 +292,25 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle--closed');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navToggle.classList.contains('main-nav__toggle--closed')) {
+          navMain.classList.add('main-nav');
+          navMain.classList.remove('main-nav--closed');
+          navToggle.classList.remove('main-nav__toggle--closed');
+          navToggle.classList.add('main-nav__toggle--opened');
+        } else {
+          navMain.classList.remove('main-nav');
+          navMain.classList.add('main-nav--closed');
+          navToggle.classList.remove('main-nav__toggle--opened');
+          navToggle.classList.add('main-nav__toggle--closed');
+          }
+      });
+    </script>
   </body>
 </html>

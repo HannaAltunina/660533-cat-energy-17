@@ -1,28 +1,45 @@
 .footer__intro {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 33px;
+  padding-bottom: 28px;
   display: flex;
 }
 
 .footer__promo {
+  margin: 0;
+  padding: 0;
+  width: 50%;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   font-weight: normal;
-  margin-left: 20px;
 }
 
 .footer__address {
+  margin: 0;
+  padding: 0;
+  width: 50%;
   font-family: $arial-font;
   line-height: 20px;
   font-style: normal;
 }
 
 .footer__logo {
-  margin-top: 39px;
-  margin-bottom: 31px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
   text-align: center;
+  border-bottom: 1px solid rgb(217, 217, 217);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__logo-img {
@@ -34,7 +51,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .footer__map {
@@ -42,20 +59,48 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer__logo {
+    width: 128px;
+    text-align: left;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .footer__intro {
+    width: 768px;
+    padding-left: 71px;
+    padding-right: 72px;
+    padding-top: 66px;
+    padding-bottom: 59px;
+  }
+
+  .footer__promo {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .footer__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .footer__city {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 30px;
+    padding: 50px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer__wrapper {
-    padding: 60px 110px;
-  }
-
   .footer {
     position: relative;
+    background-color: #f2f2f2;
   }
 
   .footer__intro {
@@ -63,5 +108,15 @@
     background-color: #ffffff;
     top: 95px;
     left: 110px;
+    width: 570px;
+    padding-left: 75px;
+    padding-right: 90px;
+  }
+
+  .footer__wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
