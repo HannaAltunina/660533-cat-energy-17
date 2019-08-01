@@ -1,9 +1,13 @@
+.footer {
+  background-color: #f2f2f2;
+}
+
 .footer__intro {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 33px;
-  padding-bottom: 28px;
+  width: 320px;
+  padding: 30px 20px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .footer__promo {
@@ -47,7 +51,6 @@
 }
 
 .footer__wrapper {
-  background-color: #f2f2f2;
   padding: 20px;
   display: flex;
   flex-direction: column;

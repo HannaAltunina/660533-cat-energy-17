@@ -1,19 +1,42 @@
 .site-button {
   font-family: $oswald-font;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
   border: none;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.site-button--catalog {
+  margin: 20px auto 25px;
 }
 
 .site-button--all-catalog {
+  margin: 20px auto 25px;
   background-color: #f2f2f2;
   color: #444444;
 }
 
+@media (min-width: $tablet-width) {
+  .site-button {
+    width: 249px;
+  }
+
+  .site-button--additional {
+    width: 100%;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .site-button {
+    width: 169px;
+  }
+
   .site-button--additional {
     width: 245px;
   }
