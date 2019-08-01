@@ -1,4 +1,6 @@
 .main__wrapper {
+  margin: 0 auto;
+  width: 320px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -10,7 +12,7 @@
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  padding: 30px 0 30px 20px;
+  padding: 30px 0;
 }
 
 .main__title--intro {
@@ -36,8 +38,6 @@
   .main__title {
     width: 768px;
     font-size: 60px;
-    padding: 30px 0 50px 30px;
-    margin: 0 auto;
   }
 
   .main__title--intro {

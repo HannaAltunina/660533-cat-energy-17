@@ -3,11 +3,17 @@
     linear-gradient(to bottom, #68b738 305px, #ffffff 305px);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: auto 305px,
+    100% 100%;
   color: #ffffff;
   text-align: center;
   padding-top: 29px;
   margin-left: -20px;
   margin-right: -20px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .intro__slogan {
@@ -51,8 +57,14 @@
     padding-top: 196px;
     background-image: url("../../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, #ffffff 720px, #68b738 720px);
+    background-size: auto 696px,
+      100% 100%;
     background-repeat: no-repeat;
     background-position: top right;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .intro__image {

@@ -32,21 +32,17 @@
 
 .review__photo {
   width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .review {
-    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 619px, #f2f2f2 619px);
     border-top: 1px solid rgb(217, 217, 217);
   }
 
   .review__wrapper {
     width: 768px;
-    background-color: #ffffff;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -64,9 +60,8 @@
   }
 
   .review__photo {
-    padding-left: 30px;
-    padding-right: 30px;
-    background-image: linear-gradient(to bottom, #ffffff 170px, #f2f2f2 170px);
+    width: 768px;
+    padding: 0 30px;
   }
 }
 
@@ -86,10 +81,12 @@
 
   .review__wrapper {
     align-content: flex-start;
-    width: 650px;
+    width: 610px;
     background-color: transparent;
     margin-left: auto;
     margin-right: 0;
+    padding-left: 40px;
+    padding-right: 0;
   }
 
   .review__text {
@@ -108,6 +105,7 @@
     background-color: transparent;
     margin-left: 0;
     margin-right: auto;
-    width: 650px;
+    width: 610px;
+    padding-right: 40px;
   }
 }

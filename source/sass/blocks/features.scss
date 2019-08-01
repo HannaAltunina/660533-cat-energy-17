@@ -2,23 +2,23 @@
   @include list-style;
   display: flex;
   flex-wrap: wrap;
-  min-width: 280px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .features__item {
   display: inline-block;
   position: relative;
   width: 100%;
-  min-height: 50px;
   font-family: $arial-font;
   margin-bottom: 32px;
-  margin-left: 100px;
+  padding-left: 80px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -80px;
+    left: 0;
     width: 60px;
     height: 60px;
     background-image: url("../../img/advantage-leaf@1x.png");
@@ -53,10 +53,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .features__list {
     flex-direction: row;
-    width: 728px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .features__item {
@@ -64,6 +69,7 @@
     margin: 0;
     min-height: 70px;
     padding-top: 117px;
+    padding-left: 0;
     padding-bottom: 48px;
     padding-right: 150px;
     margin-bottom: 80px;
@@ -81,17 +87,23 @@
   .features__number {
     font-family: $oswald-font;
     font-size: 281px;
+    font-weight: normal;
     color: #f2f2f2;
     position: absolute;
     top: 94px;
-    right: 150px;
+    right: 160px;
     z-index: -1;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    width: 1300px;
+    padding: 0 40px;
+  }
+
   .features__list {
-    width: 1220px;
+    width: 100%;
   }
 
   .features__item {

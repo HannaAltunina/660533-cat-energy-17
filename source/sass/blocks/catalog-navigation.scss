@@ -16,14 +16,17 @@
 
 @media (min-width: $tablet-width) {
   .catalog-navigation {
-    margin-top: 529px;
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
   .catalog-navigation__list {
-    width: 708px;
+    width: 100%;
   }
 
   .catalog-navigation__item {
+    width: 100%;
     padding: 55px 60px 60px 60px;
   }
 }
@@ -31,10 +34,12 @@
 @media (min-width: $desktop-width) {
   .catalog-navigation {
     margin-top: 0;
+    width: 1300px;
+    padding: 0 40px;
   }
 
   .catalog-navigation__list {
-    width: 1220px;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }

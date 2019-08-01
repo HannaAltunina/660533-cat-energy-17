@@ -180,17 +180,3 @@
     width: 30%;
   }
 }
-
-@media (min-width: $tablet-width) {
-  .product__wrapper--additional {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-
-  .product__title {
-    font-size: 20px;
-    width: 155px;
-    text-align: center;
-  }
-}
