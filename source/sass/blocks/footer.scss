@@ -62,7 +62,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer--index {
     background-color: #ffffff;
   }
 
@@ -74,8 +74,8 @@
   }
 
   .footer__intro {
-    width: 768px;
-    padding: 60px 30px;
+    width: 630px;
+    padding: 60px 0;
   }
 
   .footer__promo {

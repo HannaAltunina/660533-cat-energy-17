@@ -16,7 +16,6 @@
 }
 
 .main__title--intro {
-  padding: 0;
   color: #ffffff;
   text-align: center;
   line-height: 36px;
@@ -25,18 +24,22 @@
 .main__description {
   text-transform: uppercase;
   color: #111111;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  width: 280px;
+  margin: 30px auto;
 }
 
 @media (min-width: $tablet-width) {
   .main__wrapper {
     width: 768px;
     margin: 0 auto;
+    position: relative;
   }
 
   .main__title {
-    width: 768px;
+    width: 708px;
     font-size: 60px;
   }
 
@@ -45,13 +48,31 @@
     text-align: left;
     color: #111111;
     padding: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .main__description {
+    font-size: 20px;
+    line-height: 30px;
+    width: 630px;
+    margin: 50px auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main {
-    position: relative;
-    margin-top: -112px;
+    background-image: url("../../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, #ffffff 50%, #68b738 50%);
+    background-repeat: no-repeat;
+    background-position: right top,
+      right top;
+    background-size: auto 696px,
+      100% 696px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .main__wrapper {
@@ -62,30 +83,14 @@
 
   .main__title {
     width: 1220px;
+    margin-top: 190px;
   }
 
   .main__title--intro {
     margin-top: 250px;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-
-      width: 50%;
-      height: 696px;
-
-      top: 0;
-      right: 0;
-
-      background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/index-background-desktop@2x.jpg");
-      }
-    }
+  .main__description {
+    width: 1220px;
   }
 }
