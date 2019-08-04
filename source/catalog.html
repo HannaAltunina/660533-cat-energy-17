@@ -10,7 +10,10 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo"  href="index.html">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
+          </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--closed main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav main-nav--closed">
@@ -34,7 +37,15 @@
       <ul class="catalog__list">
         <li class="catalog__item product">
           <div class="catalog__item--wrapper">
-            <img class="product__photo" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 грамм">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="product__photo" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 грамм">
+            </picture>
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
               <dl class="product__description description">
@@ -57,21 +68,29 @@
         </li>
         <li class="catalog__item product">
           <div class="catalog__item--wrapper">
-            <img class="product__photo" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 грамм">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="product__photo" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1000 грамм">
+            </picture>
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
               <dl class="product__description description">
-                  <div class="description__wrapper">
-                <dt class="description__field">Объём</dt>
-                <dd class="description__value">1000 г</dd>
+                <div class="description__wrapper">
+                  <dt class="description__field">Объём</dt>
+                  <dd class="description__value">1000 г</dd>
                 </div>
                 <div class="description__wrapper">
-                    <dt class="description__field">Вкус</dt>
-                <dd class="description__value">Курица</dd>
+                  <dt class="description__field">Вкус</dt>
+                  <dd class="description__value">Курица</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Цена</dt>
-                <dd class="description__value">1000 Р.</dd>
+                  <dt class="description__field">Цена</dt>
+                  <dd class="description__value">1000 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -80,23 +99,30 @@
         </li>
         <li class="catalog__item product">
           <div class="catalog__item--wrapper">
-            <img class="product__photo" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 грамм">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="product__photo" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 грамм">
+            </picture>
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
               <dl class="product__description description">
-                  <div class="description__wrapper">
-                <dt class="description__field">Объём</dt>
-                <dd class="description__value">500 г</dd>
+                <div class="description__wrapper">
+                  <dt class="description__field">Объём</dt>
+                  <dd class="description__value">500 г</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Вкус</dt>
-                <dd class="description__value">Рыба</dd>
+                  <dt class="description__field">Вкус</dt>
+                  <dd class="description__value">Рыба</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Цена</dt>
-                <dd class="description__value">700 Р.</dd>
+                  <dt class="description__field">Цена</dt>
+                  <dd class="description__value">700 Р.</dd>
                 </div>
-
               </dl>
             </div>
           </div>
@@ -104,21 +130,29 @@
         </li>
         <li class="catalog__item product">
           <div class="catalog__item--wrapper">
-            <img class="product__photo" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 грамм">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+              <img class="product__photo" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 1000 грамм">
+            </picture>
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
               <dl class="product__description description">
-                  <div class="description__wrapper">
-                <dt class="description__field">Объём</dt>
-                <dd class="description__value">1000 г</dd>
+                <div class="description__wrapper">
+                  <dt class="description__field">Объём</dt>
+                  <dd class="description__value">1000 г</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Вкус</dt>
-                <dd class="description__value">Рыба</dd>
+                  <dt class="description__field">Вкус</dt>
+                  <dd class="description__value">Рыба</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Цена</dt>
-                <dd class="description__value">1000 Р.</dd>
+                  <dt class="description__field">Цена</dt>
+                  <dd class="description__value">1000 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -127,21 +161,29 @@
         </li>
         <li class="catalog__item product">
           <div class="catalog__item--wrapper">
-            <img class="product__photo" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 грамм">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="product__photo" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy Slim 500 грамм">
+            </picture>
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy Slim 500 г</h3>
               <dl class="product__description description">
-                  <div class="description__wrapper">
-                <dt class="description__field">Объём</dt>
-                <dd class="description__value">500 г</dd>
-                  </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Вкус</dt>
-                <dd class="description__value">Гречка</dd>
+                  <dt class="description__field">Объём</dt>
+                  <dd class="description__value">500 г</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Цена</dt>
-                <dd class="description__value">400 Р.</dd>
+                  <dt class="description__field">Вкус</dt>
+                  <dd class="description__value">Гречка</dd>
+                </div>
+                <div class="description__wrapper">
+                  <dt class="description__field">Цена</dt>
+                  <dd class="description__value">400 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -150,21 +192,29 @@
         </li>
         <li class="catalog__item product">
           <div class="catalog__item--wrapper">
-            <img class="product__photo" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000 грамм">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="product__photo" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy Slim 1000 грамм">
+            </picture>
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy Slim 1000 г</h3>
               <dl class="product__description description">
-                  <div class="description__wrapper">
-                <dt class="description__field">Объём</dt>
-                <dd class="description__value">1000 г</dd>
+                <div class="description__wrapper">
+                  <dt class="description__field">Объём</dt>
+                  <dd class="description__value">1000 г</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Вкус</dt>
-                <dd class="description__value">Гречка</dd>
+                  <dt class="description__field">Вкус</dt>
+                  <dd class="description__value">Гречка</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Цена</dt>
-                <dd class="description__value">700 Р.</dd>
+                  <dt class="description__field">Цена</dt>
+                  <dd class="description__value">700 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -173,21 +223,29 @@
         </li>
         <li class="catalog__item product">
           <div class="catalog__item--wrapper">
-            <img class="product__photo" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 грамм">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="product__photo" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy Slim 500 грамм">
+            </picture>
             <div class="product__wrapper">
               <h3 class="product__title">Cat Energy Slim 500 г</h3>
               <dl class="product__description description">
-                  <div class="description__wrapper">
-                <dt class="description__field">Объём</dt>
-                <dd class="description__value">500 г</dd>
+                <div class="description__wrapper">
+                  <dt class="description__field">Объём</dt>
+                  <dd class="description__value">500 г</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Вкус</dt>
-                <dd class="description__value">Рис</dd>
+                  <dt class="description__field">Вкус</dt>
+                  <dd class="description__value">Рис</dd>
                 </div>
                 <div class="description__wrapper">
-                <dt class="description__field">Цена</dt>
-                <dd class="description__value">500 Р.</dd>
+                  <dt class="description__field">Цена</dt>
+                  <dd class="description__value">500 Р.</dd>
                 </div>
               </dl>
             </div>
@@ -195,10 +253,10 @@
           <button class="site-button site-button--catalog" type="button">Заказать</button>
         </li>
         <li class="catalog__item catalog__item--all">
-            <div class="catalog__item--wrapper catalog__item--all-wrapper">
+          <div class="catalog__item--wrapper catalog__item--all-wrapper">
             <h3 class="product__title product__title--all-catalog">Показать еще 100500 товаров</h3>
-          <p class="product__description product__description--all">На самом деле вкусов гораздо больше!</p>
-          <button class="site-button site-button--all-catalog" type="button">Показать все</button>
+            <p class="product__description product__description--all">На самом деле вкусов гораздо больше!</p>
+            <button class="site-button site-button--all-catalog" type="button">Показать все</button>
           </div>
         </li>
       </ul>
