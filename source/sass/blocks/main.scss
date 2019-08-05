@@ -35,7 +35,6 @@
   .main__wrapper {
     width: 768px;
     margin: 0 auto;
-    position: relative;
   }
 
   .main__title {
@@ -61,17 +60,24 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main {
-    background-image: url("../../img/index-background-desktop@1x.jpg"),
-      linear-gradient(to right, #ffffff 50%, #68b738 50%);
-    background-repeat: no-repeat;
-    background-position: right top,
-      right top;
-    background-size: auto 696px,
-      100% 696px;
+  .main--index {
+    margin-top: -112px;
+    position: relative;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
+    &:before {
+      content: "";
+      width: 50%;
+      height: 696px;
+      position: absolute;
+      z-index: -1;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 50% 696px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 
