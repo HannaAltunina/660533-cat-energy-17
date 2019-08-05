@@ -62,22 +62,17 @@
 @media (min-width: $desktop-width) {
   .main--index {
     margin-top: -112px;
-    position: relative;
+    width: 100%;
+    background-image: url("../../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, #ffffff 50%, #68b738 50%);
+    background-repeat: no-repeat;
+    background-position: right top,
+      right top;
+    background-size: 50% 696px,
+      100% 696px;
 
-    &:before {
-      content: "";
-      width: 50%;
-      height: 696px;
-      position: absolute;
-      z-index: -1;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 50% 696px;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/index-background-desktop@2x.jpg");
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
     }
   }
 
@@ -89,11 +84,11 @@
 
   .main__title {
     width: 1220px;
-    margin-top: 190px;
   }
 
   .main__title--intro {
-    margin-top: 250px;
+    margin-top: 0;
+    padding-top: 230px;
   }
 
   .main__description {
