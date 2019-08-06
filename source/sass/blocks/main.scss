@@ -6,14 +6,14 @@
 }
 
 .main__title {
-  margin: 0 auto;
   display: block;
+  text-align: left;
+  font-weight: 400px;
   width: 320px;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  padding: 30px 0;
-  padding-left: 20px;
+  white-space: nowrap;
 }
 
 .main__title--intro {
@@ -21,6 +21,12 @@
   text-align: center;
   line-height: 36px;
   padding: 0;
+}
+
+.main__title--catalog,
+.main__title--form {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .main__description {
@@ -40,7 +46,6 @@
   }
 
   .main__title {
-    width: 708px;
     font-size: 60px;
   }
 
@@ -52,6 +57,13 @@
     margin-top: 50px;
     margin-bottom: 40px;
   }
+
+.main__title--catalog,
+.main__title--form {
+  width: 704px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
 
   .main__description {
     font-size: 20px;
@@ -79,6 +91,11 @@
   .main__title--intro {
     margin-top: 0;
     padding-top: 230px;
+  }
+
+  .main__title--catalog,
+  .main__title--form {
+    padding-top: 80px;
   }
 
   .main__description {

@@ -62,6 +62,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional-goods__title {
+    width: 1300px;
+    padding-left: 40px;
+  }
+
   .additional-goods__wrapper {
     width: 1300px;
     padding: 0 40px;
