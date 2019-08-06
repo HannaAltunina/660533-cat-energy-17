@@ -45,7 +45,7 @@
 }
 
 .features__number {
-  font-size: 0;
+  display: none;
 }
 
 .main__title--features {
@@ -85,6 +85,7 @@
   }
 
   .features__number {
+    display: inline-block;
     font-family: $oswald-font;
     font-size: 281px;
     font-weight: normal;

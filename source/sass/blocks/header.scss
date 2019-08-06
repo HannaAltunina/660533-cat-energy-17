@@ -53,10 +53,12 @@
   }
 
   .header__wrapper {
+    width: 768px;
     flex-direction: row;
     flex-wrap: nowrap;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 0 auto;
   }
 
   .header__logo {
