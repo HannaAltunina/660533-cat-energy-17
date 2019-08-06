@@ -72,6 +72,26 @@
 @media (min-width: $desktop-width) {
   .header {
     background: transparent;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      min-height: 700px;
+      top: 0;
+      right: 0;
+      z-index: -9;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-color: #63a73a;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
   .header__logo {
