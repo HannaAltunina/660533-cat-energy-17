@@ -39,16 +39,19 @@
   font-size: 24px;
   line-height: 24px;
   color: #111111;
-  padding: 30px  20px 30px 0;
+  padding: 30px 20px 30px 0;
+  background: #ffffff;
+  order: 1;
 
   &::after {
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 3px;
     position: absolute;
     bottom: 40px;
-    right: -220px;
+    left: 0;
     background-color: #68b738;
+    z-index: -1;
   }
 }
 
@@ -167,6 +170,17 @@
   .user-form__legend {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+      width: 100vw;
+      height: 3px;
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+      background-color: #68b738;
+      z-index: -1;
+    }
   }
 
   .user-form__list--addition {
