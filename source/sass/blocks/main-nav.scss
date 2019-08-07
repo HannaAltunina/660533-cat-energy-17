@@ -126,7 +126,7 @@
     }
 
     &--active .main-nav__link:hover {
-      color: #111111;
+      opacity: 1;
     }
   }
 
@@ -138,11 +138,11 @@
     margin: 0;
 
     &:hover {
-      color: rgba(17, 17, 17, 0.6);
+      opacity: 0.6;
     }
 
     &:active {
-      color: rgba(17, 17, 17, 0.3);
+      opacity: 0.3;
     }
   }
 }
@@ -160,5 +160,12 @@
 
   .main-nav__item {
     padding-top: 75px;
+  }
+
+  .main-nav__link--index {
+    color: #ffffff;
+  }
+  .main-nav__list--index .main-nav__item--active::after {
+    background: #ffffff;
   }
 }
