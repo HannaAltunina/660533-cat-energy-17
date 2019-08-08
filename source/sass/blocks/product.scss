@@ -82,6 +82,16 @@
     align-items: center;
   }
 
+  .product__photo--small {
+    width: 250px;
+    height: 172px;
+  }
+
+  .product__photo--big {
+    width: 195px;
+    height: 208px;
+  }
+
   .product__wrapper--additional {
     width: 100%;
     flex-direction: row;
@@ -94,7 +104,7 @@
     padding-left: 60px;
     padding-right: 60px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .product__title--all-catalog {

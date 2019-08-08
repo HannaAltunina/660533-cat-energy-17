@@ -46,11 +46,11 @@
     width: 324px;
     padding-left: 39px;
     padding-right: 37px;
-    margin-bottom: 140px;
-    min-height: 432px;
+    margin-bottom: 20px;
+    min-height: 550px;
     border-bottom: none;
     justify-content: flex-end;
-    background-color: rgb(248, 248, 248);
+    background-image: linear-gradient(to bottom, #ffffff 120px, rgb(248, 248, 248) 120px);
   }
 
   .catalog__item:first-child {
