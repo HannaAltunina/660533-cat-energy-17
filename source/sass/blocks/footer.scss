@@ -103,15 +103,14 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    position: relative;
     background-color: #f2f2f2;
   }
 
   .footer__intro {
     position: absolute;
     background-color: #ffffff;
-    top: 95px;
-    left: 7%;
+    top: 0;
+    left: 0;
     width: 570px;
     padding-left: 75px;
     padding-right: 90px;
