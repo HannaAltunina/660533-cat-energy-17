@@ -52,6 +52,11 @@
   }
 
   .catalog__item--all {
+    min-height: 432px;
+    height: 432px;
+    margin-top: 120px;
+    background-image: none;
+
     background-color: #ffffff;
     border: 1px solid #cdcdcd;
   }
