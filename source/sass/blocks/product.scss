@@ -3,18 +3,15 @@
 }
 
 .product__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.product__info-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.product__order {
-  width: 280px;
-  margin: 20px auto 25px;
-  font-size: 16px;
-  line-height: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .product__title {
@@ -25,14 +22,30 @@
   text-transform: uppercase;
   color: #111111;
   display: inline-block;
-  width: 90px;
+  width: 100%;
+  padding-right: 50px;
   text-align: left;
 }
 
 .product__title--all-catalog {
+  padding: 0;
   width: 100%;
   text-align: center;
+  padding-right: 0;
   margin-top: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 125px;
+    width: 31px;
+    height: 31px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' viewBox='0 0 30 30'%3E%3Cstyle%3E .st0%7Bfill:rgb(211, 211, 211)%7D %3C/style%3E%3Cpath d='M30 14H16V0h-2v14H0v2h14v14h2V16h14z' class='st0'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 31px 31px;
+  }
 }
 
 .product__photo {
@@ -41,6 +54,7 @@
 
 .product__title--additional {
   color: #222222;
+  padding-right: 0;
 }
 
 .product__description {
@@ -52,24 +66,144 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 140px;
 }
 
 .product__description--additional {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.product__description--all {
+  display: inlne-block;
+  text-align: center;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
+  .product__wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .product__picture {
+    margin-left: -39px;
+    margin-right: -37px;
+  }
+
+  .product__info-wrapper {
+    width: 100%;
+    align-items: center;
+  }
+
+  .product__photo--small {
+    width: 100%;
+    height: 172px;
+  }
+
+  .product__photo--big {
+    width: 100%;
+    height: 208px;
+  }
+
   .product__wrapper--additional {
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
   }
 
   .product__title {
     font-size: 20px;
-    width: 155px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: center;
+    margin-top: 40px;
+  }
+
+  .product__title--all-catalog {
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 165px;
+  }
+
+  .product__title--additional {
+    color: #222222;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .product__description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .product__description--all {
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .product__title--all-catalog::before {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 60 60' style='enable-background:new 0 0 60 60;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0 %7B fill: rgb(230, 230, 230); %7D %3C/style%3E%3Cpolygon class='st0' points='60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5 60,30.5 '/%3E%3C/svg%3E");
+    top: 45px;
+    left: 90px;
+    width: 61px;
+    height: 61px;
+    background-size: 61px 61px;
+  }
+
+  .product__description--additional .description__field {
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__title {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .product__description--all {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .product__title--all-catalog::before {
+    left: 50px;
+  }
+
+  .product__wrapper--additional {
+    width: 650px;
+  }
+
+  .product__title--additional {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .product__description--additional {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .product__description--additional .description__field {
+    text-align: left;
+    width: 70%;
+  }
+
+  .product__description--additional .description__value {
+    text-align: left;
+    width: 30%;
   }
 }

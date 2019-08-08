@@ -53,10 +53,12 @@
   }
 
   .header__wrapper {
+    width: 768px;
     flex-direction: row;
     flex-wrap: nowrap;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 0 auto;
   }
 
   .header__logo {
@@ -68,8 +70,28 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header {
+  .header--index {
     background: transparent;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      min-height: 700px;
+      top: 0;
+      right: 0;
+      z-index: -9;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-color: #63a73a;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
   .header__logo {
@@ -79,7 +101,9 @@
   }
 
   .header__wrapper {
-    padding-left: 110px;
-    padding-right: 110px;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
 }

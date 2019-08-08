@@ -10,8 +10,11 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo"  href="index.html">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
-        </a>
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
+              </picture>
+            </a>
         <button class="main-nav__toggle main-nav__toggle--closed main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
@@ -29,7 +32,6 @@
       </div>
     </header>
     <main class="main main--form">
-      <div class="main__wrapper main__wrapper--form">
         <h1 class="main__title main__title--form">Подбор программы</h1>
         <p class="main__description">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
         <form class="main__user-form user-form" action="https://echo.htmlacademy.ru" method="post">
@@ -51,7 +53,7 @@
             </fieldset>
             <fieldset class="user-form__fieldset user-form__fieldset--program">
               <legend class="visually-hidden">Выбор программы</legend>
-                <ul class="user-form__list">
+                <ul class="user-form__list user-form__list--program">
                   <li class="user-form__item">
                     <input class="user-form__input user-form__input--radio" type="radio" name="program-type" id="slim-check" value="slim" checked>
                     <label for="slim-check" class="user-form__label">Похудение</label>
@@ -110,36 +112,40 @@
             <p class="user-form__comment"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
-      </div>
     </main>
     <footer class="footer">
-      <div class="footer__intro">
-        <h2 class="footer__promo">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
-        <address class="footer__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
-      </div>
-      <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sby!4v1563031224178!5m2!1sen!2sby" height="380" style="border:0" allowfullscreen></iframe>
+        <div class="footer__intro-wrapper">
+            <div class="footer__intro">
+              <h2 class="footer__promo">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
+              <address class="footer__address">ул. Большая<br>Конюшенная, д. 19/8<br><span class="footer__city">Санкт-Петербург</span></address>
+            </div>
+          </div>
+          <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sby!4v1563031224178!5m2!1sen!2sby" height="380" style="border:0" allowfullscreen></iframe>
       <div class="footer__wrapper">
         <a class="footer__logo">
           <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кот Энерджи">
         </a>
         <ul class="footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__copyright copyright">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social__icon social__icon--vkontakte" width="30" height="17"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="social__icon social__icon--instagram" width="26" height="26"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__icon social__icon--facebook" width="14" height="28"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+              </a>
+            </li>
+          </ul>
+            <div class="footer__copyright copyright">
           <p class="copyright__name">HTML Academy</p>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
