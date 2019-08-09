@@ -1,5 +1,34 @@
 .editor-range {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editor-range__label {
   color: #111111;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+.editor-range__wrapper {
+  width: 84px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.editor-range__toggle {
+  width: 35px;
+  height: 6px;
+  border-radius: 2px;
+}
+
+.editor-range__toggle--before {
+  background-color: #68b738;
 }
