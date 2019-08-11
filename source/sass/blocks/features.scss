@@ -11,6 +11,8 @@
   position: relative;
   width: 100%;
   font-family: $arial-font;
+  font-size: 14px;
+  line-height: 18px;
   margin-bottom: 32px;
   padding-left: 80px;
 
@@ -74,6 +76,8 @@
     padding-bottom: 48px;
     padding-right: 100px;
     margin-bottom: 80px;
+    font-size: 16px;
+    line-height: 24px;
 
     &::before {
       content: "";
