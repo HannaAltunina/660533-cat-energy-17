@@ -7,6 +7,7 @@
   width: 280px;
   margin: 0 auto;
   padding: 10px 0;
+  position: relative;
 }
 
 .user-form__fieldset--user-info {
@@ -35,7 +36,6 @@
 
 .user-form__legend {
   display: inline-block;
-  position: relative;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
@@ -45,13 +45,12 @@
 
   &::after {
     content: "";
-    width: 100vw;
+    width: 100%;
     height: 3px;
     position: absolute;
-    bottom: 40px;
+    top: 0;
     left: 0;
     background-color: #68b738;
-    z-index: -1;
   }
 }
 
@@ -171,16 +170,15 @@
     font-size: 36px;
     line-height: 36px;
 
-    &::before {
+    /* &::before {
       content: "";
-      width: 100vw;
       height: 3px;
       position: absolute;
-      bottom: 40px;
+      bottom: 0;
       right: 0;
       background-color: #68b738;
       z-index: -1;
-    }
+    }*/
   }
 
   .user-form__list--addition {
