@@ -40,11 +40,11 @@
               <legend class="visually-hidden">Данные кота</legend>
               <p class="user-form__wrapper user-form__wrapper--user-info">
                 <label for="name-input" class="user-form__label">Имя:<sup>*</sup></label>
-                <input class="user-form__input user-form__input--name" type="text" name="name" id="name-input" placeholder="Барсик">
+                <input class="user-form__input user-form__input--name" type="text" name="name" id="name-input" placeholder="Барсик" required>
               </p>
               <p class="user-form__wrapper user-form__wrapper--user-info">
                 <label for="weight-input" class="user-form__label">Вес (кг):<sup>*</sup></label>
-                <input class="user-form__input user-form__input--weight" type="text" name="weight" id="weight-input" placeholder="7">
+                <input class="user-form__input user-form__input--weight" type="text" name="weight" id="weight-input" placeholder="7" required>
               </p>
               <p class="user-form__wrapper user-form__wrapper--user-info">
                 <label for="age-input" class="user-form__label">Возраст (лет):</label>
@@ -54,17 +54,17 @@
             <fieldset class="user-form__fieldset user-form__fieldset--program">
               <legend class="visually-hidden">Выбор программы</legend>
                 <ul class="user-form__list user-form__list--program">
-                  <li class="user-form__item">
+                  <li class="user-form__item user-form__item--program">
                     <input class="user-form__input user-form__input--radio" type="radio" name="program-type" id="slim-check" value="slim" checked>
-                    <label for="slim-check" class="user-form__label">Похудение</label>
+                    <label for="slim-check" class="user-form__label user-form__label--program">Похудение</label>
                   </li>
-                  <li class="user-form__item">
+                  <li class="user-form__item user-form__item--program">
                     <input class="user-form__input user-form__input--radio" type="radio" name="program-type" id="strong-check" value="strong">
-                    <label for="strong-check" class="user-form__label">Набор массы</label>
+                    <label for="strong-check" class="user-form__label user-form__label--program">Набор массы</label>
                   </li>
-                  <li class="user-form__item">
+                  <li class="user-form__item user-form__item--program">
                     <input class="user-form__input user-form__input--radio" type="radio" name="program-type" id="advice-check" value="give-me-advice">
-                    <label for="advice-check" class="user-form__label">Не знаю (Нужен ваш совет)</label>
+                    <label for="advice-check" class="user-form__label user-form__label--program">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
             </fieldset>
@@ -72,13 +72,13 @@
           <fieldset class="user-form__fieldset user-form__fieldset--contacts">
             <legend class="user-form__legend user-form__legend--contacts">Контактные данные<br>(владельца кота)</legend>
             <div class="user-form__wrapper user-form__wrapper--contact-list">
-              <p class="user-form__wrapper user-form__wrapper--contacts">
+              <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--email">
                 <label for="email-input" class="user-form__label">E-mail:<sup>*</sup></label>
-                <input class="user-form__input user-form__input--email" type="email" name="email" id="email-input" placeholder="kuklachev@gmail.com">
+                <input class="user-form__input user-form__input--email" type="email" name="email" id="email-input" placeholder="kuklachev@gmail.com" required>
               </p>
-              <p class="user-form__wrapper user-form__wrapper--contacts">
+              <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--tel">
                 <label for="tel-input" class="user-form__label">Телефон:<sup>*</sup></label>
-                <input class="user-form__input user-form__input--tel" type="tel" name="tel" id="tel-input" placeholder="8 (960) 900-60-90">
+                <input class="user-form__input user-form__input--tel" type="tel" name="tel" id="tel-input" placeholder="8 (960) 900-60-90" required>
               </p>
             </div>
           </fieldset>
@@ -91,19 +91,19 @@
               <ul class="user-form__list user-form__list--addition">
                 <li class="user-form__item user-form__item--addition">
                   <input class="user-form__input user-form__input--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-                  <label for="sweetener" class="user-form__label">Сахарозаменитель</label>
+                  <label for="sweetener" class="user-form__label user-form__label--addition">Сахарозаменитель</label>
                 </li>
                 <li class="user-form__item user-form__item--addition">
                   <input class="user-form__input user-form__input--checkbox" type="checkbox" name="water" id="water">
-                  <label for="water" class="user-form__label">Питьевая вода</label>
+                  <label for="water" class="user-form__label user-form__label--addition">Питьевая вода</label>
                 </li>
                 <li class="user-form__item user-form__item--addition">
                   <input class="user-form__input user-form__input--checkbox" type="checkbox" name="milk" id="milk">
-                  <label for="milk" class="user-form__label">Молоко</label>
+                  <label for="milk" class="user-form__label user-form__label--addition">Молоко</label>
                 </li>
                 <li class="user-form__item user-form__item--addition">
                   <input class="user-form__input user-form__input--checkbox" type="checkbox" name="vitamins" id="vitamins">
-                  <label for="vitamins" class="user-form__label">Витамины</label>
+                  <label for="vitamins" class="user-form__label user-form__label--addition">Витамины</label>
                 </li>
               </ul>
           </fieldset>
