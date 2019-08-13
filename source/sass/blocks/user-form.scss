@@ -27,7 +27,6 @@
   border: none;
   width: 280px;
   margin: 0 auto;
-  position: relative;
 }
 
 .user-form__fieldset--user-info {
@@ -42,23 +41,32 @@
 
 .user-form__legend {
   display: inline-block;
+  margin-left: -20px;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
-  padding: 30px 20px 30px 0;
+  padding: 30px 20px;
   background: #ffffff;
 }
 
-.user-form__legend--contacts::after {
+.user-form__legend--contacts::before,
+.user-form__legend--comment::before,
+.user-form__legend--addition::before {
   content: "";
   width: 100%;
   height: 3px;
   position: absolute;
-  top: 50px;
+  top: 53px;
   right: 0;
   background-color: #68b738;
   z-index: -1;
 }
+
+.user-form__legend--comment::before,
+.user-form__legend--addition::before {
+  top: 40px;
+}
+
 
 .user-form__list {
   @include list-style;
