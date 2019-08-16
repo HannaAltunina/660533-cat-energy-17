@@ -73,6 +73,7 @@ gulp.task("images", function() {
   .pipe(gulp.dest("source/img"));
 });
 
+
 gulp.task("webp", function() {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
@@ -93,4 +94,4 @@ gulp.task("server", function () {
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"))
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("css", "server")); /*useful comment is here*/
