@@ -82,16 +82,18 @@ gulp.task("webp", function() {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+});
+
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"))
-gulp.task("start", gulp.series("css", "server")); /*useful comment is here*/
+gulp.task("start", gulp.series("build", "server"));
