@@ -53,6 +53,13 @@
   @include img;
 }
 
+.product__picture-link,
+.product__info-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+}
+
 .product__title--additional {
   color: #222222;
   padding-right: 0;
@@ -90,7 +97,7 @@
     width: 100%;
   }
 
-  .product__picture {
+  .product__picture-link {
     margin-left: -39px;
     margin-right: -37px;
   }

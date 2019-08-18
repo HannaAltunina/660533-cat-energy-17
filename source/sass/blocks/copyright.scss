@@ -1,3 +1,7 @@
+.copyright__logo path {
+  fill:  #111111;
+}
+
 .copyright {
   width: 280px;
   display: flex;
@@ -6,8 +10,8 @@
   text-decoration: none;
   margin-top: 15px;
 
-  &:hover .copyright__logo-path {
-    fill: #68b738;
+  &:hover .copyright__logo {
+    fill:  #68b738;
   }
 
   &:active {

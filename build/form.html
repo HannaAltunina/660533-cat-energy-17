@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -15,8 +15,8 @@
                 <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
               </picture>
             </a>
-        <button class="main-nav__toggle main-nav__toggle--closed main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle main-nav__toggle--opened main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -37,6 +37,7 @@
         <form class="main__user-form user-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="user-form__header">
             <fieldset class="user-form__fieldset user-form__fieldset--user-info">
+              <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--user-info">
               <legend class="visually-hidden">Данные кота</legend>
               <p class="user-form__wrapper user-form__wrapper--user-info">
                 <label for="name-input" class="user-form__label">Имя:<sup>*</sup></label>
@@ -50,8 +51,10 @@
                 <label for="age-input" class="user-form__label">Возраст (лет):</label>
                 <input class="user-form__input user-form__input--age" type="text" name="age" id="age-input" placeholder="7">
               </p>
+            </div>
             </fieldset>
-            <fieldset class="user-form__fieldset user-form__fieldset--program">
+            <fieldset class="user-form__fieldset">
+                <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--program">
               <legend class="visually-hidden">Выбор программы</legend>
                 <ul class="user-form__list user-form__list--program">
                   <li class="user-form__item user-form__item--program">
@@ -67,31 +70,37 @@
                     <label for="advice-check" class="user-form__label user-form__label--program">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
+              </div>
             </fieldset>
           </div>
           <div class="main__wrapper main__wrapper--form">
           <fieldset class="user-form__fieldset user-form__fieldset--contacts">
-            <legend class="user-form__legend user-form__legend--contacts">Контактные данные<br>(владельца кота)</legend>
-            <div class="user-form__wrapper user-form__wrapper--contact-list">
-              <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--email">
-                <label for="email-input" class="user-form__label">E-mail:<sup>*</sup></label>
-                <input class="user-form__input user-form__input--email" type="email" name="email" id="email-input" placeholder="kuklachev@gmail.com" required="">
-              </p>
-              <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--tel">
-                <label for="tel-input" class="user-form__label">Телефон:<sup>*</sup></label>
-                <input class="user-form__input user-form__input--tel" type="tel" name="tel" id="tel-input" placeholder="8 (960) 900-60-90" required="">
-              </p>
+            <div class="user-form__fieldset-wrapper">
+              <legend class="user-form__legend user-form__legend--contacts">Контактные данные<br>(владельца кота)</legend>
+              <div class="user-form__wrapper user-form__wrapper--contact-list">
+                <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--email">
+                  <label for="email-input" class="user-form__label">E-mail:<sup>*</sup></label>
+                  <input class="user-form__input user-form__input--email" type="email" name="email" id="email-input" placeholder="kuklachev@gmail.com" required="">
+                </p>
+                <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--tel">
+                  <label for="tel-input" class="user-form__label">Телефон:<sup>*</sup></label>
+                  <input class="user-form__input user-form__input--tel" type="tel" name="tel" id="tel-input" placeholder="8 (960) 900-60-90" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" required="">
+                </p>
+              </div>
             </div>
           </fieldset>
           </div>
           <div class="main__wrapper main__wrapper--form">
           <fieldset class="user-form__fieldset user-form__fieldset--comment">
-            <legend class="user-form__legend user-form__legend--comment">Комментарий</legend>
-              <textarea class="user-form__input user-form__input--comment" rows="10" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
+            <div class="user-form__fieldset-wrapper">
+              <legend class="user-form__legend user-form__legend--comment">Комментарий</legend>
+                <textarea class="user-form__input user-form__input--comment" rows="10" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+            </fieldset>
           </div>
           <div class="main__wrapper main__wrapper--form">
           <fieldset class="user-form__fieldset user-form__fieldset--addition">
+              <div class="user-form__fieldset-wrapper">
             <legend class="user-form__legend user-form__legend--addition">Дополнительно</legend>
               <ul class="user-form__list user-form__list--addition">
                 <li class="user-form__item user-form__item--addition">
@@ -111,10 +120,11 @@
                   <label for="vitamins" class="user-form__label user-form__label--addition">Витамины</label>
                 </li>
               </ul>
+              </div>
           </fieldset>
           </div>
           <div class="user-form__wrapper user-form__wrapper--button">
-            <button class="user-form__button site-button" type="submit">Отправить заявку</button>
+            <button class="site-button site-button--user-form" type="submit">Отправить заявку</button>
             <p class="user-form__comment"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
@@ -162,25 +172,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle--closed');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navToggle.classList.contains('main-nav__toggle--closed')) {
-          navMain.classList.add('main-nav');
-          navMain.classList.remove('main-nav--closed');
-          navToggle.classList.remove('main-nav__toggle--closed');
-          navToggle.classList.add('main-nav__toggle--opened');
-        } else {
-          navMain.classList.remove('main-nav');
-          navMain.classList.add('main-nav--closed');
-          navToggle.classList.remove('main-nav__toggle--opened');
-          navToggle.classList.add('main-nav__toggle--closed');
-          }
-      });
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
