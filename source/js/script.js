@@ -17,6 +17,28 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+var btnSubmit = document.querySelector('.site-button--user-form');
+var form = document.querySelector('.user-form');
+var row = form.querySelectorAll('.user-form__wrapper--required');
+var field = form.querySelectorAll('.user-form__input:required');
+
+form.addEventListener('input', function() {
+  for (var i=0; i<=field.length-1; i++) {
+    if(field[i].validity.valid) {
+      row[i].classList.remove('user-form__wrapper--error');
+    }
+  }
+});
+
+btnSubmit.addEventListener('click', function (evt) {
+  for (var i=0; i<=field.length-1; i++) {
+    if (!field[i].validity.valid) {
+      row[i].classList.add('user-form__wrapper--error');
+      evt.preventDefault();
+    }
+  }
+});
+
 /*
 function initMap() {
 var coordinates = {lat: 59.938663, lng: 30.323016},

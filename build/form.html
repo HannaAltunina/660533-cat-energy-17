@@ -39,11 +39,11 @@
             <fieldset class="user-form__fieldset user-form__fieldset--user-info">
               <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--user-info">
               <legend class="visually-hidden">Данные кота</legend>
-              <p class="user-form__wrapper user-form__wrapper--user-info">
+              <p class="user-form__wrapper user-form__wrapper--required user-form__wrapper--user-info">
                 <label for="name-input" class="user-form__label">Имя:<sup>*</sup></label>
                 <input class="user-form__input user-form__input--name" type="text" name="name" id="name-input" placeholder="Барсик" required="">
               </p>
-              <p class="user-form__wrapper user-form__wrapper--user-info">
+              <p class="user-form__wrapper user-form__wrapper--required user-form__wrapper--user-info">
                 <label for="weight-input" class="user-form__label">Вес (кг):<sup>*</sup></label>
                 <input class="user-form__input user-form__input--weight" type="text" name="weight" id="weight-input" placeholder="7" required="">
               </p>
@@ -53,7 +53,7 @@
               </p>
             </div>
             </fieldset>
-            <fieldset class="user-form__fieldset">
+            <fieldset class="user-form__fieldset user-form__fieldset--program">
                 <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--program">
               <legend class="visually-hidden">Выбор программы</legend>
                 <ul class="user-form__list user-form__list--program">
@@ -78,11 +78,11 @@
             <div class="user-form__fieldset-wrapper">
               <legend class="user-form__legend user-form__legend--contacts">Контактные данные<br>(владельца кота)</legend>
               <div class="user-form__wrapper user-form__wrapper--contact-list">
-                <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--email">
+                <p class="user-form__wrapper user-form__wrapper--required user-form__wrapper--contacts user-form__wrapper--email">
                   <label for="email-input" class="user-form__label">E-mail:<sup>*</sup></label>
                   <input class="user-form__input user-form__input--email" type="email" name="email" id="email-input" placeholder="kuklachev@gmail.com" required="">
                 </p>
-                <p class="user-form__wrapper user-form__wrapper--contacts user-form__wrapper--tel">
+                <p class="user-form__wrapper user-form__wrapper--required user-form__wrapper--contacts user-form__wrapper--tel">
                   <label for="tel-input" class="user-form__label">Телефон:<sup>*</sup></label>
                   <input class="user-form__input user-form__input--tel" type="tel" name="tel" id="tel-input" placeholder="8 (960) 900-60-90" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" required="">
                 </p>
