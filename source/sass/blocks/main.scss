@@ -11,7 +11,7 @@
 }
 
 .main__title {
-  display: block;
+  display: inline-block;
   text-align: left;
   font-weight: 400;
   width: 280px;
@@ -26,6 +26,7 @@
   text-align: center;
   line-height: 36px;
   padding: 0;
+  margin: 0 auto;
 }
 
 .main__title--catalog,
