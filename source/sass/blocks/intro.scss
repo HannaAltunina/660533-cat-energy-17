@@ -19,7 +19,7 @@
 .intro__slogan {
   text-transform: uppercase;
   margin-top: 22px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 }
 
 .intro__image {
@@ -36,14 +36,14 @@
   font-size: 14px;
   line-height: 18px;
   background-color: #68b738;
-  padding: 12px 74px 11px 73px;
+  padding: 10px 74px 12px 73px;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     width: 768px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 30px 0 119px;
     background: transparent;
     text-align: left;
     position: relative;
@@ -61,16 +61,16 @@
     z-index: -1;
     width: 709px;
     height: 609px;
-    top: 200px;
-    left: -80px;
+    top: 250px;
+    left: 29px;
   }
 
   .intro__link {
-    margin-top: 20px;
+    margin-top: 21px;
     margin-bottom: 500px;
     font-size: 20px;
     line-height: 20px;
-    padding: 15px 30px 15px 27px;
+    padding: 15px 28px 17px 26px;
   }
 }
 
@@ -85,11 +85,12 @@
     width: 552px;
     height: 499px;
     z-index: 1;
-    top: 150px;
+    top: 20px;
     left: 450px;
   }
 
   .intro__link {
+    margin-top: 25px;
     margin-bottom: 250px;
   }
 }

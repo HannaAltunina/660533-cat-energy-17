@@ -1,9 +1,12 @@
 .editor-range {
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 63px;
+  padding-right: 59px;
 }
 
 .editor-range__label {
@@ -16,7 +19,7 @@
   width: 84px;
   height: 14px;
   background-color: #ffffff;
-  border-radius: 6px;
+  border-radius: 5px;
   border: 1px solid #cdcdcd;
   display: block;
   position: relative;
@@ -35,6 +38,8 @@
 @media (min-width: $tablet-width) {
   .editor-range {
     width: 570px;
+    margin-top: -4px;
+    padding: 0;
   }
 
   .editor-range__label {
@@ -91,5 +96,12 @@
       border-radius: 50%;
       background-color: #68b738;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .editor-range {
+    margin-top: 15px;
+    margin-left: 40px;
   }
 }

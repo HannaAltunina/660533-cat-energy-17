@@ -70,6 +70,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .header {
+    font-size: 20px;
+  }
+
   .header--index {
     background: transparent;
     position: relative;
@@ -78,7 +82,7 @@
       content: "";
       position: absolute;
       width: 50%;
-      min-height: 700px;
+      min-height: 695px;
       top: 0;
       right: 0;
       z-index: -9;
@@ -95,9 +99,13 @@
   }
 
   .header__logo {
-    height: 60px;
-    width: 203px;
+    width: auto;
     padding-top: 53px;
+  }
+
+  .header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 
   .header__wrapper {

@@ -19,7 +19,7 @@
     content: "";
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 19px;
 
     width: 55px;
     height: 57px;
@@ -27,7 +27,7 @@
     background-image: url("../img/icon-cat-slim.svg"),
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='25' cx='25' cy='25' fill='%2368b738'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: center 0,
+    background-position: center 2px,
       center center;
     background-size: 35px 49px,
       50px 50px;
@@ -36,8 +36,8 @@
   &--strong::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 22px;
+    left: 13px;
 
     width: 70px;
     height: 53px;
@@ -56,23 +56,25 @@
   font-family: $arial-font;
   width: 100%;
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .declaration__link {
   position: relative;
+  display: inline-block;
+  margin-top: 5px;
   text-transform: uppercase;
   color: #111111;
   text-decoration: none;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 6px;
-    right: -40px;
+    bottom: 2px;
+    right: -35px;
 
     width: 25px;
     height: 12px;
@@ -106,23 +108,27 @@
     font-size: 36px;
     line-height: 37px;
     margin-left: 0;
+    margin-bottom: 10px;
+
 
     &--slim::before {
-      top: 70px;
-      left: 430px;
+      top: 79px;
+      left: 446px;
 
       width: 200px;
-      height: 205px;
+      height: 225px;
 
       background-image: url("../img/icon-cat-slim.svg"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='100' cx='100' cy='100' fill='%2368b738'/%3E%3C/svg%3E");
       background-size: 141px 194px,
         200px 200px;
+      background-position: center 1px,
+        center center;
     }
 
     &--strong::before {
-      top: 70px;
-      left: 400px;
+      top: 91px;
+      left: 413px;
 
       width: 270px;
       height: 200px;
@@ -141,42 +147,55 @@
     padding-right: 210px;
     border-bottom: none;
   }
+
+  .declaration__link {
+    margin-top: 19px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      bottom: 4px;
+      right: -47px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .declaration__title {
-    margin-left: 166px;
+    margin-left: 162px;
 
     &--slim::before {
       top: 40px;
       left: 50px;
 
-      width: 100px;
-      height: 105px;
+      width: 102px;
+      height: 107px;
 
       background-image: url("../img/icon-cat-slim.svg"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='50' cx='50' cy='50' fill='%2368b738'/%3E%3C/svg%3E");
+      background-position: center 1px,
+        2px 7px;
       background-size: 71px 97px,
         100px 100px;
     }
 
     &--strong::before {
-      top: 40px;
-      left: 50px;
+      top: 47px;
+      left: 35px;
 
       width: 134px;
       height: 100px;
 
       background-image: url("../img/icon-cat-pro.svg"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='50' cx='50' cy='50' fill='%2368b738'/%3E%3C/svg%3E");
-      background-size: 134px 57px,
+      background-size: 134px 58px,
         100px 100px;
     }
   }
 
   .declaration__text {
     padding: 0;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    margin-top: 63px;
+    margin-bottom: 13px;
   }
 }

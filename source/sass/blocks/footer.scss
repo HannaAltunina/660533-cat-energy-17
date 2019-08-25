@@ -4,10 +4,14 @@
 
 .footer__intro {
   width: 320px;
-  padding: 30px 20px;
+  padding: 28px 20px 26px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.footer__intro-wrapper {
+  background-color: #ffffff;
 }
 
 .footer__promo {
@@ -32,8 +36,8 @@
 
 .footer__logo {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 29px;
   text-align: center;
   border-bottom: 1px solid rgb(217, 217, 217);
 
@@ -71,11 +75,14 @@
     text-align: left;
     padding: 0;
     border-bottom: none;
+    padding-top: 5px;
+    margin-right: 155px;
   }
 
   .footer__intro {
-    width: 630px;
-    padding: 60px 0;
+    width: 626px;
+    padding: 65px 0;
+    padding-bottom: 58px;
   }
 
   .footer__promo {
@@ -91,13 +98,18 @@
 
   .footer__city {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 18px;
+  }
+
+  .footer__map {
+    height: 400px;
   }
 
   .footer__wrapper {
+    width: 768px;
+    margin: 0 auto;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 50px 30px;
+    padding: 43px 23px 47px 30px;
   }
 }
 
@@ -122,10 +134,20 @@
     padding-right: 90px;
   }
 
+  .footer__address {
+    text-align: left;
+    padding-left: 47px;
+  }
+
   .footer__wrapper {
-    max-width: 1300px;
+    width: 1300px;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 39px;
+  }
+
+  .footer__logo {
+    margin-right: 412px;
   }
 }
