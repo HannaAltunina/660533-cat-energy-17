@@ -1,3 +1,8 @@
+.additional-goods {
+  width: 100%;
+  position: relative;
+}
+
 .additional-goods__wrapper {
   display: flex;
   flex-direction: column;
@@ -11,28 +16,41 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-top: 1px solid rgb(206, 206, 206);
+  border-top: 1px solid #cecece;
 }
 
 .additional-goods__item {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgb(206, 206, 206);
-  padding-top: 14px;
+  border-bottom: 1px solid #cecece;
+  padding-top: 11px;
   padding-bottom: 17px;
 }
 
 .additional-goods__title {
-  display: block;
-  width: 320px;
-  padding: 30px 20px;
+  display: inline-block;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-bottom: 34px;
+  padding-right: 20px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #111111;
   background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 41px;
+    right: 0;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -42,7 +60,11 @@
   }
 
   .additional-goods__list {
-    border: 1px solid rgb(206, 206, 206);
+    border: 1px solid #cecece;
+  }
+
+  .additional-goods__item {
+    padding: 20px 35px 27px 38px;
   }
 
   .additional-goods__item:last-child {
@@ -50,22 +72,29 @@
   }
 
   .additional-goods__title {
-    width: 768px;
     font-size: 36px;
     line-height: 36px;
     color: #111111;
-    padding-left: 70px;
-  }
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 46px;
+    padding-bottom: 80px;
+    margin-left: 30px;
 
-  .additional-goods__item {
-    padding: 28px 38px;
+    &::after {
+      top: 67px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-goods__title {
-    width: 1300px;
-    padding-left: 40px;
+    padding: 52px 35px 80px 40px;
+    margin-left: 0;
+
+    &::after {
+      top: 73px;
+    }
   }
 
   .additional-goods__wrapper {
@@ -78,18 +107,18 @@
   .additional-goods__list {
     width: 893px;
     border: none;
-    border-top: 1px solid rgb(206, 206, 206);
+    border-top: 1px solid #cecece;
   }
 
   .additional-goods__item {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 12px 0 16px;
   }
 
   .additional-goods__item:last-child {
-    border-bottom: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid #cecece;
   }
 
   .additional-goods {

@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-.footer__intro-wrapper {
+.footer--index .footer__intro-wrapper {
   background-color: #ffffff;
 }
 
@@ -39,7 +39,7 @@
   padding-top: 16px;
   padding-bottom: 29px;
   text-align: center;
-  border-bottom: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid #d9d9d9;
 
   &:hover {
     opacity: 0.8;
@@ -109,7 +109,7 @@
     width: 768px;
     margin: 0 auto;
     flex-direction: row;
-    padding: 43px 23px 47px 30px;
+    padding: 42px 23px 47px 30px;
   }
 }
 
@@ -144,7 +144,7 @@
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 39px;
+    padding-top: 45px;
   }
 
   .footer__logo {

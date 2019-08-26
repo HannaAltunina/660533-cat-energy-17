@@ -17,7 +17,28 @@
 
 @media (min-width: $tablet-width) {
   .description__wrapper {
-    padding: 5px 0;
-    border-bottom: 1px solid rgb(205, 205, 205);
+    padding: 9px 0 6px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .description__field--additional {
+    text-align: right;
+    flex-grow: 1;
+  }
+
+  .description__value--additional {
+    width: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__field--additional {
+    text-align: left;
+    width: 72%;
+  }
+
+  .description__value--additional {
+    text-align: left;
+    width: 28%;
   }
 }

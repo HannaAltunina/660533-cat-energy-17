@@ -8,6 +8,7 @@
 .main__wrapper--form {
   width: 100%;
   position: relative;
+  padding: 0;
 }
 
 .main__title {
@@ -36,22 +37,26 @@
 
 .main__title--catalog,
 .main__title--form {
-  width: 280px;
+  display: block;
+  width: 320px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 27px;
+  padding-bottom: 40px;
 }
 
-.main__title--catalog {
-  padding-left: 20px;
+.main__title--form {
+  padding-bottom: 36px;
 }
 
 .main__description {
   text-transform: uppercase;
   color: #111111;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   display: block;
   width: 280px;
-  margin: 30px auto;
+  margin: 0 auto 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -88,16 +93,18 @@
 
   .main__title--catalog,
   .main__title--form {
-    width: 704px;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    width: 768px;
+    padding-top: 62px;
+    padding-bottom: 22px;
+    padding-left: 29px;
+    margin: 0 auto;
   }
 
   .main__description {
     font-size: 20px;
     line-height: 30px;
     width: 630px;
-    margin: 50px auto;
+    margin: 45px auto;
   }
 }
 
@@ -125,7 +132,9 @@
 
   .main__title--catalog,
   .main__title--form {
-    padding-top: 80px;
+    width: 1300px;
+    padding-top: 77px;
+    padding-left: 40px;
   }
 
   .main__description {

@@ -46,10 +46,10 @@
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 5px;
-    border-bottom: 1px dotted rgb(190, 190, 190);
+    border-bottom: 1px dotted #bebebe;
 
     &:hover {
-      border-bottom: 1px solid rgb(152, 152, 152);
+      border-bottom: 1px solid #989898;
     }
 
     &:active {
