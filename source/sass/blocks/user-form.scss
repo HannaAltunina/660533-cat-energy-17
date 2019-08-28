@@ -43,7 +43,6 @@
 .user-form__fieldset {
   border: none;
   width: 100%;
-  position: relative;
   padding: 0;
   margin: 0 auto;
 }
@@ -79,6 +78,7 @@
   line-height: 24px;
   color: #111111;
   padding: 28px 20px 33px;
+  margin-left: -20px;
   background: #ffffff;
 }
 
@@ -340,7 +340,6 @@
 @media (min-width: $tablet-width) {
   .user-form {
     margin-bottom: 70px;
-    padding-left: 3px;
   }
 
   .user-form__fieldset--program {
@@ -481,6 +480,12 @@
     padding: 8px 20px 7px;
   }
 
+  .user-form__input--email:active,
+  .user-form__input--tel:active,
+  .user-form__input[type=text]:active {
+    padding: 8px 19px 7px;
+  }
+
   .user-form__input::placeholder {
     font-size: 20px;
     line-height: 20px;
@@ -559,7 +564,7 @@
   }
 
   .user-form__legend {
-    margin-left: 0;
+    margin-left: -40px;
   }
 
   .user-form__legend--contacts {

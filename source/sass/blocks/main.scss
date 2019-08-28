@@ -5,6 +5,11 @@
   padding-right: 20px;
 }
 
+.main__wrapper--form {
+  width: 100%;
+  position: relative;
+}
+
 .main__title {
   display: inline-block;
   text-align: left;
@@ -61,6 +66,11 @@
     padding-right: 0;
   }
 
+  .main__wrapper--form {
+    width: 100%;
+    position: relative;
+  }
+
   .main__title {
     font-size: 60px;
   }
@@ -102,6 +112,11 @@
     width: 1300px;
     padding: 0 40px;
     margin: 0 auto;
+  }
+
+  .main__wrapper--form {
+    width: 100%;
+    position: relative;
   }
 
   .main__title {

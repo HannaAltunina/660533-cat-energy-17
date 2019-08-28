@@ -79,7 +79,8 @@
               </div>
             </fieldset>
           </div>
-          <fieldset class="user-form__fieldset user-form__fieldset--contacts">
+          <div class="main__wrapper main__wrapper--form">
+            <fieldset class="user-form__fieldset user-form__fieldset--contacts">
               <legend class="user-form__legend user-form__legend--contacts">Контактные данные <br>(владельца кота)</legend>
               <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--contacts">
               <div class="user-form__wrapper user-form__wrapper--contact-list">
@@ -94,12 +95,16 @@
               </div>
               </div>
           </fieldset>
-          <fieldset class="user-form__fieldset user-form__fieldset--comment">
+          </div>
+          <div class="main__wrapper main__wrapper--form">
+            <fieldset class="user-form__fieldset user-form__fieldset--comment">
               <legend class="user-form__legend user-form__legend--comment">Комментарий</legend>
               <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--comment">
                 <textarea class="user-form__input user-form__input--comment" rows="7" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
+          </div>
+          <div class="main__wrapper main__wrapper--form">
           <fieldset class="user-form__fieldset user-form__fieldset--addition">
             <legend class="user-form__legend user-form__legend--addition">Дополнительно</legend>
               <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper-addition">
@@ -123,6 +128,7 @@
               </ul>
               </div>
           </fieldset>
+        </div>
           <div class="user-form__wrapper user-form__wrapper--button">
             <button class="site-button site-button--user-form" type="submit">Отправить заявку</button>
             <p class="user-form__comment"><sup>*</sup> — Обязательные поля</p>
@@ -152,7 +158,7 @@
                 <li class="social__item">
                   <a class="social__link social__link--instagram" href="#">
                     <span class="visually-hidden">Инстаграм</span>
-                    <svg class="social__icon social__icon--instagram" width="16" height="16"><use xlink:href="#icon-insta"></use></svg>
+                    <svg class="social__icon social__icon--instagram" width="17" height="17"><use xlink:href="#icon-insta"></use></svg>
                   </a>
                 </li>
                 <li class="social__item">
