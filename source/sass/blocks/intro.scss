@@ -50,7 +50,7 @@
   }
 
   .intro__slogan {
-    color: #000000;
+    color: #111111;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -77,8 +77,9 @@
 @media (min-width: $desktop-width) {
   .intro {
     background: transparent;
-    width: 1300px;
-    padding: 0 80px;
+    width: 1220px;
+    padding: 0;
+    padding-left: 80px;
   }
 
   .intro__image {

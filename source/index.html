@@ -21,7 +21,7 @@
             <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="40" alt="Изображение логотипа Кот Энерджи">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--opened main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header__nav-toggle header__nav-toggle--opened header__nav-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list main-nav__list--index">
             <li class="main-nav__item main-nav__item--active">
@@ -44,13 +44,12 @@
           <h2 class="main__title main__title--intro">Функциональное<br>питание для котов</h2>
           <p class="intro__slogan">Занялся собой? Займись котом!</p>
           <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/ndex-can-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-
-              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-              <img class="intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" alt="Кэт Энерджи Про со вкусом курицы">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/ndex-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="intro__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" alt="Кэт Энерджи Про со вкусом курицы">
           </picture>
           <a class="intro__link" href="form.html">Подобрать программу</a>
         </article>
@@ -78,43 +77,42 @@
           </ul>
         </section>
       </div>
-        <section class="review">
-          <div class="review__wrapper">
-            <h2 class="main__title main__title--review">Живой пример</h2>
-            <p class="review__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="review__stats">
-              <dl class="review__stats-list stats-list">
-                <div class="stats-list__wrapper">
-                  <dt class="stats-list__term stats-list__term--weight">снижение <br>веса</dt>
-                  <dd class="stats-list__definition">5 кг</dd>
-                </div>
-                <div class="stats-list__wrapper">
-                  <dt class="stats-list__term stats-list__term--time">затрачено <br>времени</dt>
-                  <dd class="stats-list__definition">60 дней</dd>
-                </div>
-              </dl>
-              <p class="stats-list__cost">Затраты на питание:<br> <span class="stats-list__sum">15 000 руб.</span></p>
-            </div>
-          </div>
-          <div class="review__photo cutomer-photo">
-            <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                    <img class="cutomer-photo__before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="316" height="240" alt="Фото кота до перехода на функциональное питание">
-            </picture>
-            <div class="cutomer-photo__editor-range editor-range">
-              <p class="editor-range__label editor-range__label--before">Было</p>
-              <div class="editor-range__wrapper">
-                <div class="editor-range__toggle"></div>
+      <section class="review">
+        <div class="review__wrapper">
+          <h2 class="main__title main__title--review">Живой пример</h2>
+          <p class="review__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="review__stats stats">
+            <dl class="stats__stats-list stats-list">
+              <div class="stats-list__wrapper">
+                <dt class="stats-list__term stats-list__term--weight">снижение <br>веса</dt>
+                <dd class="stats-list__definition">5 кг</dd>
               </div>
-              <p class="editor-range__label editor-range__label--after">Стало</p>
-            </div>
+              <div class="stats-list__wrapper">
+                <dt class="stats-list__term stats-list__term--time">затрачено <br>времени</dt>
+                <dd class="stats-list__definition">60 дней</dd>
+              </div>
+            </dl>
+            <p class="stats__cost">Затраты на питание:<br> <span class="stats__sum">15 000 руб.</span></p>
           </div>
-        </section>
+        </div>
+        <div class="review__photo cutomer-photo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="cutomer-photo__before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="316" height="240" alt="Фото кота до перехода на функциональное питание">
+          </picture>
+          <div class="cutomer-photo__editor-range editor-range">
+            <p class="editor-range__label editor-range__label--before">Было</p>
+            <div class="editor-range__wrapper">
+              <button class="editor-range__toggle" type="button"><span class="visually-hidden">Переключатель фотографии</span></button>
+            </div>
+            <p class="editor-range__label editor-range__label--after">Стало</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer footer--index">
       <div class="footer__intro-wrapper">
@@ -123,39 +121,46 @@
           <address class="footer__address">ул. Большая<br>Конюшенная, д. 19/8<br><span class="footer__city">Санкт-Петербург</span></address>
         </div>
       </div>
-      <!--<div id="footer__map"></div>-->
-      <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sby!4v1563031224178!5m2!1sen!2sby" height="362" style="border:0" allowfullscreen=""></iframe>
+      <div class="footer__map">
+        <iframe class="footer__js-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sby!4v1563031224178!5m2!1sen!2sby" height="362" style="border:0" allowfullscreen=""></iframe>
+      </div>
       <div class="footer__wrapper">
-          <a class="footer__logo" href="#">
-              <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кот Энерджи">
+        <a class="footer__logo" href="#">
+        <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кот Энерджи">
         </a>
         <ul class="footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-                <svg class="social__icon social__icon--instagram" width="17" height="17"><use xlink:href="#icon-insta"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
-              </a>
-            </li>
-          </ul>
-          <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__name">HTML Academy</p>
-            <svg class="copyright__logo" width="40" height="51">
-              <title>Логотип HTML Академии</title>
-              <use xlink:href="#icon-htmlacademy"></use>
-            </svg>
-          </a>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="social__icon social__icon--vkontakte" width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="social__icon social__icon--instagram" width="17" height="17">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="social__icon social__icon--facebook" width="10" height="19">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__name">HTML Academy</p>
+          <svg class="copyright__logo" width="40" height="51">
+            <title>Логотип HTML Академии</title>
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
     <script src="js/script.min.js"></script>

@@ -377,7 +377,7 @@
     padding: 25px 40px 54px;
 
     &::before {
-      top:47px;
+      top: 47px;
     }
   }
 
@@ -482,7 +482,7 @@
 
   .user-form__input--email:active,
   .user-form__input--tel:active,
-  .user-form__input[type=text]:active {
+  .user-form__input[type="text"]:active {
     padding: 8px 19px 7px;
   }
 
