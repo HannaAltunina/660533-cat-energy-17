@@ -14,42 +14,42 @@
   margin-left: 72px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
 
-  &--slim::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 19px;
+.declaration__title--slim::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 19px;
 
-    width: 55px;
-    height: 57px;
+  width: 55px;
+  height: 57px;
 
-    background-image: url("../img/icon-cat-slim.svg"),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='25' cx='25' cy='25' fill='%2368b738'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center 2px,
-      center center;
-    background-size: 35px 49px,
-      50px 50px;
-  }
+  background-image: url("../img/icon-cat-slim.svg"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='25' cx='25' cy='25' fill='%2368b738'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center 2px,
+    center center;
+  background-size: 35px 49px,
+    50px 50px;
+}
 
-  &--strong::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: 13px;
+.declaration__title--strong::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 13px;
 
-    width: 70px;
-    height: 53px;
+  width: 70px;
+  height: 53px;
 
-    background-image: url("../img/icon-cat-pro.svg"),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='25' cx='25' cy='25' fill='%2368b738'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: 0 center,
-      center center;
-    background-size: 67px 28px,
-      50px 50px;
-  }
+  background-image: url("../img/icon-cat-pro.svg"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='25' cx='25' cy='25' fill='%2368b738'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center,
+    center center;
+  background-size: 67px 28px,
+    50px 50px;
 }
 
 .declaration__text {
@@ -111,35 +111,34 @@
     line-height: 37px;
     margin-left: 0;
     margin-bottom: 10px;
+  }
 
+  .declaration__title--slim::before {
+    top: 79px;
+    left: 446px;
 
-    &--slim::before {
-      top: 79px;
-      left: 446px;
+    width: 200px;
+    height: 225px;
 
-      width: 200px;
-      height: 225px;
+    background-image: url("../img/icon-cat-slim.svg"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='100' cx='100' cy='100' fill='%2368b738'/%3E%3C/svg%3E");
+    background-size: 141px 194px,
+      200px 200px;
+    background-position: center 1px,
+      center center;
+  }
 
-      background-image: url("../img/icon-cat-slim.svg"),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='100' cx='100' cy='100' fill='%2368b738'/%3E%3C/svg%3E");
-      background-size: 141px 194px,
-        200px 200px;
-      background-position: center 1px,
-        center center;
-    }
+  .declaration__title--strong::before {
+    top: 91px;
+    left: 413px;
 
-    &--strong::before {
-      top: 91px;
-      left: 413px;
+    width: 270px;
+    height: 200px;
 
-      width: 270px;
-      height: 200px;
-
-      background-image: url("../img/icon-cat-pro.svg"),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='100' cx='100' cy='100' fill='%2368b738'/%3E%3C/svg%3E");
-      background-size: 268px 113px,
-        200px 200px;
-    }
+    background-image: url("../img/icon-cat-pro.svg"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='100' cx='100' cy='100' fill='%2368b738'/%3E%3C/svg%3E");
+    background-size: 268px 113px,
+      200px 200px;
   }
 
   .declaration__text {
@@ -165,34 +164,34 @@
 @media (min-width: $desktop-width) {
   .declaration__title {
     margin-left: 162px;
+  }
 
-    &--slim::before {
-      top: 40px;
-      left: 50px;
+  .declaration__title--slim::before {
+    top: 40px;
+    left: 50px;
 
-      width: 102px;
-      height: 107px;
+    width: 102px;
+    height: 107px;
 
-      background-image: url("../img/icon-cat-slim.svg"),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='50' cx='50' cy='50' fill='%2368b738'/%3E%3C/svg%3E");
-      background-position: center 1px,
-        2px 7px;
-      background-size: 71px 97px,
-        100px 100px;
-    }
+    background-image: url("../img/icon-cat-slim.svg"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='50' cx='50' cy='50' fill='%2368b738'/%3E%3C/svg%3E");
+    background-position: center 1px,
+      2px 7px;
+    background-size: 71px 97px,
+      100px 100px;
+  }
 
-    &--strong::before {
-      top: 47px;
-      left: 35px;
+  .declaration__title--strong::before {
+    top: 47px;
+    left: 35px;
 
-      width: 134px;
-      height: 100px;
+    width: 134px;
+    height: 100px;
 
-      background-image: url("../img/icon-cat-pro.svg"),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='50' cx='50' cy='50' fill='%2368b738'/%3E%3C/svg%3E");
-      background-size: 134px 58px,
-        100px 100px;
-    }
+    background-image: url("../img/icon-cat-pro.svg"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='50' cx='50' cy='50' fill='%2368b738'/%3E%3C/svg%3E");
+    background-size: 134px 58px,
+      100px 100px;
   }
 
   .declaration__text {
