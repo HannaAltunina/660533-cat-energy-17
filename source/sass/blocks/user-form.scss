@@ -34,7 +34,7 @@
 
 .user-form__fieldset {
   border: none;
-  width: 100%;
+  width: 280px;
   padding: 0;
   margin: 0 auto;
 }
@@ -288,12 +288,21 @@
   background-size: 21px 16px;
 }
 
-.user-form__input--radio:focus + .user-form__label--program::before,
 .user-form__input--radio:hover + .user-form__label--program::before,
-.user-form__input--checkbox:focus + .user-form__label--addition::before,
 .user-form__input--checkbox:hover + .user-form__label--addition::before {
   border: 1px solid #bababa;
 }
+
+.user-form__input--radio:focus + .user-form__label--program::before,
+.user-form__input--checkbox:focus + .user-form__label--addition::before {
+  border: 1px solid #68b738;
+}
+
+.user-form__input--radio:active + .user-form__label--program::before,
+.user-form__input--checkbox:active + .user-form__label--addition::before {
+  border: 1px solid #bababa;
+}
+
 
 .user-form__input--radio:active + .user-form__label--program::before,
 .user-form__input--radio:active + .user-form__label--program::after,
@@ -352,6 +361,10 @@
     margin-bottom: 70px;
   }
 
+  .user-form__fieldset {
+    width: 768px;
+  }
+
   .user-form__fieldset--program {
     border-top: none;
     border-bottom: none;
@@ -368,7 +381,7 @@
   }
 
   .user-form__legend--contacts {
-    padding: 75px 35px 76px;
+    padding: 75px 40px 76px;
 
     &::before {
       top: 97px;
@@ -554,6 +567,10 @@
 @media (min-width: $desktop-width) {
   .user-form {
     margin-bottom: 84px;
+  }
+
+  .user-form__fieldset {
+    width: 1220px;
   }
 
   .user-form__header {

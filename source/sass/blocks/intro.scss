@@ -77,9 +77,10 @@
 @media (min-width: $desktop-width) {
   .intro {
     background: transparent;
-    width: 1220px;
+    width: 100%;
     padding: 0;
     padding-left: 80px;
+    padding-right: 650px;
   }
 
   .intro__image {
